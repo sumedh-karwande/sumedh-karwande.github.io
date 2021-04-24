@@ -1,0 +1,528 @@
+/**********Nav Bar********************************/
+/*************Nav Bar*****************************/
+nav {
+    .nav_log {
+        width: 6.5rem;
+    }
+
+    .Desktop_nav {
+        display: none;
+    }
+} 
+/***********Cardic Delhi**********/
+.cardic_delhi {
+    display: none;
+}
+
+/*********Dr list sort by***************/
+
+.Dr_list_sorting {
+    padding-bottom: 0rem;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        padding-top: 0.4rem;
+        margin: 0rem;
+    }
+
+    button {
+        width: 5.8rem;
+    }
+}
+
+/********Dr informatio************************/
+.Dr_information {
+    .Dr_list {
+
+        /**************filter********************************/
+
+        .filter {
+            display: none;
+        }
+
+        /**************Experts Details***********************/
+        .experts_details {
+            .Dr_details {
+                border: 0.1rem solid var(--lightgrey);
+                margin-bottom: 1rem;
+
+                .part1 {
+                    padding: 1rem 0rem;
+                    .Drname {
+                        h2 {
+                            color: var(--dodgle-blue);
+                            position: relative;
+                            margin-left: 1.9rem;
+                        }
+
+                        ::before {
+                            content: "";
+                            position: absolute;
+                            border-bottom: 0.19rem solid;
+                            width: 1.8rem;
+                            top: 0.4rem;
+                            left: -2rem;
+                         }
+                    }
+
+                    
+                    .Drinfo_list {
+                        ul {
+                            padding: 0.5rem 0rem;
+                            li {
+                                padding: 0.5rem;
+                                h4 {
+                                    font-size: 0.9rem;
+                                    i {
+                                        color: var(--dodgle-blue);
+                                        padding-right: 0.5rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .book_apot {
+                        display: flex;
+                        justify-content: center;
+
+                        button {
+                            width: 60%;
+                        }
+                    }
+                }
+
+                .Drimage1 {
+                    height: 25rem;
+                }
+
+                
+            }
+        }
+    }
+}
+
+ /**********Help**********************/
+.help {
+    background-color: var(--lightbg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    .help_hp {
+        h1{
+           color: var(--white);
+        }
+     }
+     .enquiry_button {
+         width: 60%;
+     }
+}  
+
+
+/**********footer**************/
+
+.Footer {
+    .first_row {
+        display: contents;
+        .footer_image {
+            width: 12rem;
+            
+
+        }
+        ul {
+            padding: 1rem;
+            li {
+                h1 {
+                    color: var(--white);  
+                }
+                color: var(--white);
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    .second_row {
+        .socail-media {
+            display: none;
+        }
+
+        .copy-rights {
+            h3 {
+                color: var(--white);
+                i {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+ 
+/**********Tablet Views***/
+ @media only screen and ( min-width:768px) {
+    
+    /********Cardic Delhi********/
+    .cardic_delhi  {
+      
+        height:10rem;
+        display: block;
+        background-image:linear-gradient(rgba(133, 178, 196, 0.8),rgba(121, 145, 155, 0.8)),url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png");
+        background-position: center;
+        background-size: cover;
+       
+        
+    } 
+    .cardic_delhi h1 {
+       display: flex;
+       justify-content:flex-start;
+       padding-top:4.5rem;
+       
+    }
+    .cardic_delhi h1 a {
+        padding-left: 0.4rem;
+    }
+    /**********Dr list sorting by**********************/
+    .Dr_list_sorting {
+        padding-bottom: 2rem;
+        button {
+            width: 7rem;
+            height: 2.5rem;
+        }
+    }
+
+    /********Dr informatio************************/
+    .Dr_information {
+        padding-top: 0rem;
+        .Dr_list {
+
+
+            display: grid;
+            grid-template-columns: 25% 75%;
+            grid-column-gap: 0.8rem;
+            
+
+            /***************filter****************************/
+            .filter {
+                display: initial;
+                form {
+                    flex-direction: column;
+                    button {
+                        height: 2.3rem;
+                        text-align: start;
+                        padding-left: 0.8rem;
+                    }
+                    .selcted {
+                        display: none;
+                        
+                    }
+                    .tratment_filter {
+                        border-bottom: 0.1rem solid var(--lightgrey);;
+                        width: 100%;
+                        padding-top: 0.8rem;
+                        
+                        
+                        
+                        h4 {
+                            color: lightskyblue;
+                        }
+                        h3,h4 {
+                            
+                            padding: 0.8rem 0rem;
+                            margin-left: 0.5rem;
+                            i{
+                                color: var(--dodgle-blue);
+                                padding-right: 1.9rem;
+                                position: relative; 
+                            }
+                            ::after {
+                                content: "";
+                               position: absolute;
+                               border-bottom:0.25rem solid lightgray;
+                               width: 1.5rem;
+                               margin-left: 1.2rem;
+                               top: 0.5rem;
+                               
+                            }
+                        }
+                        h3 {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        .input_lable {
+                            display: block;
+                            padding: 0.1rem 0rem;
+                            margin-left: 0.5rem;
+                            input {
+                                width: 1rem;
+                                margin: 0rem;
+                                font-family: 'nexa-bold';
+                                color: var(--dark_blue);
+
+                            }
+                            label {
+                                font-size: 0.8rem;
+                            }
+                        }
+
+                     
+                    }  
+                }
+            }
+
+            /**************Experts Details***********************/
+            .experts_details {
+                width: 97.5%;
+                .Dr_details {
+                    display: grid;
+                    grid-template-columns: 70% 30%;
+                    
+                    .part1 {
+                        .Drname {
+                            h2 {
+                                margin-left: 2.5rem;
+                            }
+                            ::before {
+                                left: -2.5rem;
+                                width: 2.5rem;
+                            }
+                        }
+                        .Drinfo_list {
+                            ul {
+                               display: grid;
+                               grid-template-columns: 50% 50%;
+                               padding: 1rem 0rem 1rem 2.5rem;
+                               li {
+                                   padding: 0.5rem 0rem 0.5rem;
+                                   h4 {
+                                       display: flex;
+                                       align-items: center;
+                                       span {
+                                           padding: 0rem;
+                                           margin-left: 0.3rem;
+                                       }
+                                   }
+                               }
+                            }
+                        }
+                        .book_apot {
+                            justify-content: start;
+                            margin-left: 2.5rem;
+                        }
+                    }
+
+                    
+                    .Drimage1 {
+                            height: auto;
+                    }
+                        
+                    
+                }
+            }
+    
+            
+    
+            
+        }   
+    }
+
+
+     /******************Help***************/
+    .help {
+        .enquiry_button {
+            width: 30%;
+        }
+    }
+
+    /****************Footer**************************/
+    .Footer {
+        border-bottom: 0.5rem solid var(--dodgle-blue);
+        .first_row {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            justify-content: space-between;
+            .footer_image {
+                width: 9rem;
+            }
+            ul {
+                padding: 0rem;
+                .s_media_name {
+                    display: none;
+                }
+                li {
+                    color: var(--dark_blue);
+                    display: inline-flex;
+                    padding: 0.5rem 0.8rem 0.5rem 0rem;
+                }
+            }
+        }
+        .second_row {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            justify-content: space-between;
+            padding-top: 1.5rem;
+            .socail-media {
+                display: initial;
+                i {
+                    color: var(--dark_blue);
+                    padding: 0rem;
+                    padding-left: 0.8rem;
+                }
+            }
+            .copy-rights {
+                h3 {
+                    color: var(--dark_blue); 
+                    font-size: 0.9rem;
+                    i{
+                        color: var(--dark_blue);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*********Desktop views (1024px)*********************/
+@media only screen and ( min-width:1024px) {
+
+    /******************Nav Bar**************************/
+    nav {
+        #list_toggle {
+            display: none;
+        }
+        .nav_log {
+            width: 13rem;
+        }
+        .Desktop_nav {
+            display: initial;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            .navbar_buttons {
+                display: flex;
+
+                button {
+                    width: 10rem;
+                    height: 3rem;
+                    padding: 0rem 1rem;
+                    border-radius: 0.3rem;
+                    
+                }
+
+                .login-button {
+                    margin-right: 0.5rem;
+                    border: 0.1rem solid;
+                   
+                    border: 0.05rem solid var(--dark_blue);
+                     background-color: var(--white);
+                     color: var(--dark_blue);
+                }
+                
+                .quote-button {
+                    
+                    background-color: var(--dark_blue);
+                    color: var(--white);
+                }
+
+            }
+
+            ul {
+                display: flex;
+                margin-right: 4rem;
+
+                li {
+                    padding-top: 1rem;
+                    a {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    /*************DR information*******************************/
+    .Dr_information {
+        .Dr_list {
+            grid-column-gap: 3rem;
+            .filter {
+                form {
+                    .selcted {
+                        display: initial;
+                        ul {
+                            padding-top: 0.5rem;
+                            display: flex;
+                            flex-wrap: wrap;
+                            li {
+                                display: flex;
+                                width: 100%;
+                                font-size: 0.8rem;
+                                border: 0.1rem solid gainsboro;
+                                border-radius: 1rem;
+                                padding:0.5rem 0.2rem;
+                                width: fit-content;
+                                margin-right: 0.2rem;
+                                margin-bottom: 0.2rem;
+                               
+                                font-size: 0.7rem;
+                                i{
+                                    padding-left: 0.4rem;
+                                    color: lightskyblue;
+                                }
+                                span {
+                                    padding: 0rem;
+                                    margin-left: 0.38rem;
+                                    font-family: 'nexa-bold';
+                                    color: var(--dark_blue);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /***********Experts details*********************/
+            .experts_details {
+                width: 95%;
+                .Dr_details {
+                    .book_apot {
+                        width: 50%;
+                    }
+                    .Drimage1 {
+                        height: 20rem;
+                    }
+                    
+                }
+                  
+            }
+        }
+    }
+    /*************Help***************************/
+
+    .help {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .help_hp {
+            p {
+                margin-bottom: 0rem;
+            }
+        }
+
+        .enquiry_button {
+            width: 20%; 
+            padding-top: 0.5rem;
+
+            .second_button {
+                height: 3.2rem;
+                font-size: 0.9rem;
+            }
+        }
+    } 
+    
+    /************************foooter****************/
+    
+
+}

@@ -1,0 +1,266 @@
+/*************Nav Bar*****************************/
+nav .nav_log {
+  width: 6.5rem;
+}
+
+nav .Desktop_nav {
+  display: none;
+}
+
+/***********Cardic Delhi**********/
+.cardic_delhi {
+  display: none;
+}
+
+/*********Dr list sort by***************/
+.Dr_list_sorting {
+  padding-bottom: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Dr_list_sorting h2 {
+  padding-top: 0.4rem;
+  margin: 0rem;
+}
+
+.Dr_list_sorting button {
+  width: 5.8rem;
+}
+
+/**********Help**********************/
+.help {
+  background-color: var(--lightbg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help .help_hp h1 {
+  color: var(--white);
+}
+
+.help .enquiry_button {
+  width: 60%;
+}
+
+/**********footer**************/
+.Footer .first_row {
+  display: contents;
+}
+
+.Footer .first_row .footer_image {
+  width: 12rem;
+}
+
+.Footer .first_row ul {
+  padding: 1rem;
+}
+
+.Footer .first_row ul li {
+  color: var(--white);
+  padding: 0.5rem;
+}
+
+.Footer .first_row ul li h1 {
+  color: var(--white);
+}
+
+.Footer .second_row .socail-media {
+  display: none;
+}
+
+.Footer .second_row .copy-rights h3 {
+  color: var(--white);
+}
+
+.Footer .second_row .copy-rights h3 i {
+  color: var(--white);
+}
+
+/************Media Q*************/
+/****************Tablet Views****************************/
+@media only screen and (min-width: 768px) {
+  /**********Dr list sorting by**********************/
+  .Dr_list_sorting button {
+    width: 7rem;
+    height: 2.5rem;
+  }
+  /******************Help***************/
+  .help .enquiry_button {
+    width: 30%;
+  }
+  /****************Footer**************************/
+  .Footer {
+    border-bottom: 0.5rem solid var(--dodgle-blue);
+  }
+  .Footer .first_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Footer .first_row .footer_image {
+    width: 9rem;
+  }
+  .Footer .first_row ul {
+    padding: 0rem;
+  }
+  .Footer .first_row ul .s_media_name {
+    display: none;
+  }
+  .Footer .first_row ul li {
+    color: var(--dark_blue);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.5rem 0.8rem 0.5rem 0rem;
+  }
+  .Footer .second_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .Footer .second_row .socail-media {
+    display: initial;
+  }
+  .Footer .second_row .socail-media i {
+    color: var(--dark_blue);
+    padding: 0rem;
+    padding-left: 0.8rem;
+  }
+  .Footer .second_row .copy-rights h3 {
+    color: var(--dark_blue);
+    font-size: 0.9rem;
+  }
+  .Footer .second_row .copy-rights h3 i {
+    color: var(--dark_blue);
+  }
+}
+
+/*********Desktop views (1024px)*********************/
+@media only screen and (min-width: 1024px) {
+  /******************Nav Bar**************************/
+  nav #list_toggle {
+    display: none;
+  }
+  nav .nav_log {
+    width: 13rem;
+  }
+  nav .Desktop_nav {
+    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  nav .Desktop_nav .navbar_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .Desktop_nav .navbar_buttons button {
+    width: 10rem;
+    height: 3rem;
+    padding: 0rem 1rem;
+    border-radius: 0.3rem;
+  }
+  nav .Desktop_nav .navbar_buttons .login-button {
+    margin-right: 0.5rem;
+    border: 0.05rem solid var(--dark_blue);
+    background-color: var(--white);
+    color: var(--dark_blue);
+  }
+  nav .Desktop_nav .navbar_buttons .quote-button {
+    background-color: var(--dark_blue);
+    color: var(--white);
+  }
+  nav .Desktop_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4rem;
+  }
+  nav .Desktop_nav ul li {
+    padding-top: 1rem;
+  }
+  nav .Desktop_nav ul li a {
+    padding: 1rem;
+  }
+  /********Cardic Delhi********/
+  .cardic_delhi {
+    height: 10rem;
+    display: block;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(133, 178, 196, 0.8)), to(rgba(121, 145, 155, 0.8))), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png");
+    background-image: linear-gradient(rgba(133, 178, 196, 0.8), rgba(121, 145, 155, 0.8)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .cardic_delhi h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 4.5rem;
+  }
+  .cardic_delhi h1 a {
+    padding-left: 0.4rem;
+  }
+  /************Help*****************/
+  .help {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .help .help_hp p {
+    margin-bottom: 0rem;
+  }
+  .help .enquiry_button {
+    width: 20%;
+    padding-top: 0.5rem;
+  }
+  .help .enquiry_button .second_button {
+    height: 3.2rem;
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=hospital.css.map */

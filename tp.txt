@@ -1,0 +1,7 @@
+.intro button {
+    margin-left: 8rem;
+    margin-right: 6rem;
+    padding: 0.8rem;
+    width: fit-content;
+}
+ 

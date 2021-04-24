@@ -1,0 +1,656 @@
+/*************Nav Bar*****************************/
+nav .nav_log {
+  width: 6.5rem;
+}
+
+nav .Desktop_nav {
+  display: none;
+}
+
+/************find****************************/
+.header {
+  background-color: var(--lightbg-color);
+}
+
+.header .mheader .inputform .mapicon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--white);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.header .mheader .inputform .mapicon i {
+  padding: 0.5rem;
+  color: var(--dark_blue);
+}
+
+.header .mheader .inputform .mapicon input {
+  border: none;
+}
+
+.header .mheader .inputform .mapicon .second_input {
+  margin-left: 1.7rem;
+}
+
+.header .mheader .inputform .mapicon .crosshairsimg {
+  width: 1rem;
+  padding: 0.5rem;
+}
+
+.header .mheader .inputform button {
+  margin-top: 0.5rem;
+  border: none;
+  width: 10rem;
+  height: 2.25rem;
+}
+
+/********How its Work*****************************/
+.how ul .fix_li li {
+  border-color: var(--dark_blue);
+}
+
+.how ul .fix_li li h2 {
+  color: var(--dark_blue);
+}
+
+.how ul .fix_li li h2 span {
+  color: var(--dodgle-blue);
+}
+
+.how ul .fig_fix_caption {
+  text-align: center;
+}
+
+.how ul .fig_fix_caption .fix_img {
+  margin-left: 0.5rem;
+}
+
+.how ul .fig_fix_caption h2 {
+  padding: 1rem;
+}
+
+.how ul li {
+  border: 0.1rem solid lightgray;
+  border-radius: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.how ul li h2 {
+  padding: 1rem;
+  color: var(--lightgrey);
+}
+
+.how ul li h2 span {
+  padding-right: 1rem;
+}
+
+/*******Word Experts Dr********************/
+.expertsDr {
+  background-color: var(--dark_blue);
+}
+
+.expertsDr h1 {
+  color: var(--white);
+}
+
+.expertsDr p {
+  color: var(--lightgrey);
+  padding: 0.5rem;
+}
+
+.expertsDr .expertsDr_info .expertsDr_card {
+  margin-bottom: 0.8rem;
+}
+
+.expertsDr .expertsDr_info .expertsDr_card .Dr_image {
+  height: 25rem;
+}
+
+.expertsDr .expertsDr_info .expertsDr_card .Drintro {
+  background-color: var(--white);
+  margin-top: -0.2rem;
+  border-bottom: 0.2rem solid skyblue;
+  padding: 0.5rem 0rem;
+}
+
+.expertsDr .expertsDr_info .expertsDr_card .Drintro h3 {
+  color: var(--dodgle-blue);
+  position: relative;
+  margin-left: 2rem;
+  padding: 0.5rem 0;
+}
+
+.expertsDr .expertsDr_info .expertsDr_card .Drintro ::before {
+  content: "";
+  position: absolute;
+  border-bottom: 0.19rem solid;
+  width: 1.8rem;
+  top: 0.7rem;
+  left: -2rem;
+}
+
+.expertsDr .expertsDr_info .expertsDr_card .Drintro ul li {
+  margin-left: 2rem;
+  margin-bottom: 0.3rem;
+  text-align: start;
+  font-size: 0.9rem;
+}
+
+/* ........treatment........................ */
+.Treatment .doc .docs .doc-c .grid-box {
+  height: 20rem;
+  width: 100%;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.Treatment .doc .docs .doc-c .grid-box .linear-g {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(57%, rgba(17, 10, 26, 0.9)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(17, 10, 26, 0.9) 57%);
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0%;
+}
+
+.Treatment .doc .docs .doc-c .grid-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Treatment .doc .docs .doc-c .grid-box .name {
+  position: absolute;
+  bottom: 6%;
+  left: 6%;
+  font-size: 0.75rem;
+  font-family: nexa-light;
+  color: var(--white);
+  text-align: left;
+}
+
+.Treatment .doc .docs .doc-c .grid-box .name h5 {
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.02rem;
+  font-size: 1rem;
+  font-family: 'nexa-bold';
+  color: var(--white);
+}
+
+/* ........treatment..end................... */
+/**********Services*****************************/
+.services {
+  background-color: whitesmoke;
+}
+
+.services .services_available {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services .services_available .box {
+  background-color: var(--white);
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.2rem;
+  width: 47%;
+}
+
+.services .services_available .box h3 {
+  font-size: 0.81rem;
+  margin-bottom: 0.7rem;
+}
+
+/**********Help**********************/
+.help {
+  background-color: var(--lightbg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help .help_hp h1 {
+  color: var(--white);
+}
+
+.help .enquiry_button {
+  width: 60%;
+}
+
+/*********************Footer**********************/
+.Footer .first_row .footer_image {
+  width: 9.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.Footer .first_row ul li {
+  color: var(--white);
+  padding: 0.3rem;
+}
+
+.Footer .second_row .socail-media i {
+  color: var(--white);
+  padding: 0.8rem;
+}
+
+.Footer .second_row .copy-rights h3 {
+  color: var(--white);
+}
+
+.Footer .second_row .copy-rights h3 i {
+  color: var(--white);
+}
+
+/********Footer end***************/
+/************Meadia Q*******************************/
+/*************Tablet Views (768px)*********************/
+/************************Find Afforable********************/
+@media only screen and (min-width: 768px) {
+  .header .mheader .heading p {
+    margin: 1rem 0rem;
+  }
+  .header .mheader .inputform #Search_add {
+    margin-right: 0.2rem;
+    width: 60%;
+  }
+  .header .mheader .inputform #search_h_d {
+    width: 80%;
+  }
+  .header .mheader .inputform button {
+    width: 13rem;
+    margin-top: 0rem;
+    margin-bottom: 0.3rem;
+  }
+  /*****************How its work*************************/
+  .how ul li {
+    margin-bottom: 0.9rem;
+  }
+  .how ul li h2 span {
+    padding-left: 0rem;
+  }
+  .how .facilities {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: (7)[1fr];
+        grid-template-rows: repeat(1fr 7);
+    padding-top: 0.5rem;
+  }
+  .how .facilities .fix_li {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .how .facilities .fig_fix_caption {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 8;
+    margin-left: 1rem;
+  }
+  .how .facilities .fig_fix_caption .fix_img {
+    margin-left: 1.3rem;
+  }
+  .how .facilities .fig_fix_caption p {
+    margin-top: 0rem;
+  }
+  .how .facilities .f_ul_list {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 8;
+  }
+  /*********************Word Experts Dr************************/
+  .expertsDr .expertsDr_info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    grid-column-gap: 0.4rem;
+  }
+  .expertsDr .expertsDr_info .expertsDr_card {
+    width: 98%;
+  }
+  .expertsDr .expertsDr_info .expertsDr_card .Drintro ::before {
+    top: 0.8rem;
+  }
+  .expertsDr .expertsDr_info .expertsDr_card .Drintro ul {
+    height: 4.5rem;
+  }
+  /************************Featured Medical*******************/
+  .Treatment .demo-hp p {
+    margin: 1rem 0rem;
+  }
+  .Treatment .docs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 0.5rem;
+  }
+  .Treatment .docs .doc-c {
+    width: 97%;
+  }
+  /******************************Services****************/
+  .services .services_available .box {
+    width: 31%;
+    margin: 0.5rem;
+  }
+  /******************Help***************/
+  .help .enquiry_button {
+    width: 30%;
+  }
+  /************************Footer*******************************/
+  .Footer .first_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Footer .first_row ul li {
+    color: var(--dark_blue);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.5rem 0.8rem 0.5rem 0rem;
+  }
+  .Footer .second_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .Footer .second_row .socail-media i {
+    color: var(--dark_blue);
+    padding: 0rem;
+    padding-left: 0.8rem;
+  }
+  .Footer .second_row .copy-rights h3 {
+    color: var(--dark_blue);
+    font-size: 0.9rem;
+  }
+  .Footer .second_row .copy-rights h3 i {
+    color: var(--dark_blue);
+  }
+}
+
+/*********Desktop views (1024px)*********************/
+@media only screen and (min-width: 1024px) {
+  /******************Nav Bar**************************/
+  nav #list_toggle {
+    display: none;
+  }
+  nav .nav_log {
+    width: 13rem;
+  }
+  nav .Desktop_nav {
+    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  nav .Desktop_nav .navbar_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .Desktop_nav .navbar_buttons button {
+    width: 10rem;
+    height: 3rem;
+    padding: 0rem 1rem;
+    border-radius: 0.3rem;
+  }
+  nav .Desktop_nav .navbar_buttons .login-button {
+    margin-right: 0.5rem;
+    border: 0.1rem solid var(--dark_blue);
+    background-color: var(--white);
+    color: var(--dark_blue);
+    font-family: 'nexa-bold';
+  }
+  nav .Desktop_nav .navbar_buttons .quote-button {
+    background-color: var(--dark_blue);
+    color: var(--white);
+  }
+  nav .Desktop_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4rem;
+  }
+  nav .Desktop_nav ul li {
+    padding-top: 1rem;
+  }
+  nav .Desktop_nav ul li a {
+    padding: 1rem;
+  }
+  /***Find Afforatable***********/
+  .header {
+    background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+  }
+  .header .mheader {
+    padding: 4rem 0rem;
+    width: 60%;
+  }
+  .header .mheader .inputform .mapicon {
+    height: 3rem;
+  }
+  .header .mheader .inputform .mapicon i {
+    padding: 1rem;
+  }
+  .header .mheader .inputform #Search_add .crosshairsimg {
+    width: 1.5rem;
+    padding: 1rem;
+  }
+  .header .mheader .inputform button {
+    height: 3rem;
+  }
+  /**************How its Work*******************************/
+  .how ul .fix_li li {
+    border-color: var(--dodgle-blue);
+  }
+  .how ul li {
+    width: 80%;
+    margin-bottom: 0.4rem;
+  }
+  .how ul li h2 {
+    padding: 1.5rem;
+  }
+  .how ul li h2 span {
+    padding: 0rem 1.8rem 0rem 1rem;
+    font-size: 1.8rem;
+  }
+  .how .facilities .fig_fix_caption {
+    padding-top: 2rem;
+  }
+  .how .facilities .fig_fix_caption p {
+    text-align: center;
+    padding: 0rem 1.5rem;
+  }
+  /*********Word Experts Dr*******************/
+  .expertsDr .expertsDr_info {
+    -ms-grid-columns: (25%)[4];
+        grid-template-columns: repeat(4, 25%);
+  }
+  /***********Treatment*****/
+  /*......treatment.......................  */
+  .Treatment {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .Treatment .doc .docs {
+    display: -ms-grid;
+    display: grid;
+    height: 50rem;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[10];
+        grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0.8rem;
+  }
+  .Treatment .doc .docs .doc-c {
+    /*  margin: 0.3rem;*/
+    margin-bottom: 0.8rem;
+    width: auto;
+  }
+  .Treatment .doc .docs .doc-c .grid-box {
+    height: 100%;
+  }
+  .Treatment .doc .docs #ta {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / span 3 / span 1;
+    margin-left: 0;
+  }
+  .Treatment .doc .docs #tb {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 2 / span 5 / span 1;
+  }
+  .Treatment .doc .docs #tc {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 3 / span 4 / span 1;
+    margin-right: 0;
+  }
+  .Treatment .doc .docs #td {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 8;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 4 / 1 / span 8 / span 1;
+    margin-left: 0;
+  }
+  .Treatment .doc .docs #te {
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-area: 6 / 2 / span 5 /  3;
+  }
+  .Treatment .doc .docs #tf {
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 6;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 5 / 3 / span 6 / span 1;
+    margin-right: 0;
+  }
+  .Treatment .dotss {
+    margin-top: 2rem;
+  }
+  .Treatment .dotss .dott {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin-right: 0.5rem;
+    background-color: var(--lightgrey);
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+  }
+  .Treatment .dotss .dott:hover {
+    background-color: #ddc6c6;
+  }
+  /*......treatment.end......................  */
+  /**********Services*******************************/
+  .services .services_available {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .services .services_available .box {
+    width: 16%;
+    height: 10rem;
+    border-radius: 0rem;
+    margin: 0rem;
+  }
+  /************Help*****************/
+  .help {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .help .help_hp p {
+    margin-bottom: 0rem;
+  }
+  .help .enquiry_button {
+    width: 20%;
+    padding-top: 0.5rem;
+  }
+  .help .enquiry_button .second_button {
+    height: 3.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/*********************End***************************/
+/*# sourceMappingURL=style.css.map */

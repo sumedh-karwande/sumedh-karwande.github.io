@@ -1,0 +1,187 @@
+* body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+     display:flex;
+    background-color: white;
+    color:#525659 ;
+    justify-content:space-between;
+    padding: 1rem;
+   }
+nav img {
+    width: 7rem;
+  } 
+.intro {
+    display: flex;
+    padding: 0.8rem;
+    background-color:rgb(165, 200, 238);
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    
+}
+@font-face {
+    font-family:"Nexa-Bold";
+    src: url('Nexa-Bold.otf');
+    font-style:normal;
+     }
+.intro h1 {
+    font-family:Nexa-Bold;
+    color:rgb(45, 42, 63) ;
+      } 
+@font-face {
+    font-family:"Nexa-Light";
+    src: url('Nexa-Light.otf');
+    font-style: normal;
+}  
+.intro p {
+    font-family: Nexa-Light;
+  font-size: 1.1rem;
+  color: rgb(45, 42, 63);
+}  
+ .inputlogo {
+     display: flex;
+     justify-content: center;
+     height:2.8rem;
+     width: 100%;
+     padding: 0.5rem;
+     
+    } 
+ .inputlogo input {
+     background-image:url('../Images/gpslogo.png');
+     background-size: 1rem;
+     background-repeat: no-repeat;
+     background-position-x:right ;
+     background-position-y: center;
+ } 
+#searchinput {
+    width:100%;
+    border: none;
+    font-size: 1rem;
+    color: rgb(45, 42, 63);
+}
+.input2 {
+    width: 100%;
+    border: none;
+    height: 2.8rem;
+}
+.intro button {
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    background-color:rgb(45, 42, 63);
+    color: wheat;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+} 
+/*Consultion  */
+.hworks {
+    display: flex;
+    padding: 0.8rem;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+.hworks img {
+    display: flex;
+     justify-content: center;
+    width:16rem;
+    height:16rem;
+}
+.hworks h1 {
+    font-family:Nexa-Bold;
+    color:rgb(45, 42, 63);
+}
+.hworks p {
+    font-family: Nexa-Light;
+    font-size: 1.1rem;
+    color: rgb(45, 42, 63);
+    text-align: center;
+    margin-top:0.01rem;
+}
+#fix {
+    font-family:Nexa-Bold;
+    color:rgb(45, 42, 63);
+   border:solid 0.08rem rgb(45, 42, 63);
+   padding: 1rem;
+   border-radius:0.8rem;
+   width: 90%;
+}
+.hworks span {
+    color:lightskyblue;
+}
+.hworks h2 {
+    font-family:Nexa-Bold;
+    color:rgb(45, 42, 63);
+}
+.hworks h3 {
+    list-style: none;
+    display: flex;
+   align-content: center;
+     flex-direction: column;
+    justify-content: center;
+    font-family: Nexa-Light;
+    color: #cccccc;
+    border:solid 0.08rem rgb(45, 42, 63);
+    padding:1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    border-radius:0.8rem;
+    width:90%;
+}
+.expertDr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #021433;
+    
+}
+
+.expertDr h2 {
+    color: #cccccc;
+    font-family: Nexa-Bold;
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+.expertDr p {
+    color: #cccccc;
+    font-family:Nexa-Light;
+    display: flex;
+   text-align: center;
+   flex-wrap: wrap;
+   width: 90%;
+}
+
+.expertDr li {
+    list-style: none;
+}
+.exp {
+ padding-top: 0.3rem;
+ 
+}
+.firstdr {
+    margin-bottom: 1rem;
+    width:90%;
+   border-bottom:0.2rem solid skyblue;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    text-align: left;
+    }
+.firstdr ul {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 4rem;
+    margin-left: 0rem;
+    list-style: none;
+}    
+
+

@@ -1,0 +1,336 @@
+
+@font-face{
+    font-family: 'nexa-light';
+    src: url('Nexa-Light.otf');
+}
+@font-face{
+    font-family: 'nexa-bold';
+    src: url('Nexa-Bold.otf');
+}
+
+
+/* ............................................... */
+:root {
+    --white: #ffffff;
+    --lightbg-color: #60a0ca;
+    --dark_blue: #021433;
+    --dodgle-blue: rgb(21, 131, 241);
+    --black: rgb(0, 0, 0);
+    --black_light:rgba(10, 10, 10,0.5);
+    --grey_c:rgb(128, 128, 128);
+    --lightgrey:#cccccc;
+  }
+  
+/* .................................................. */
+nav{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section{
+    padding: 2rem 1rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:var(--dark_blue);
+    font-family: 'nexa-bold';
+    letter-spacing: 0.059rem;
+    
+    
+}
+h1{
+    
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 0.5rem ;
+}
+
+h2{
+   
+    font-size:1.1rem;
+}
+
+h3{
+    font-size: 0.9rem;
+}
+
+h4{
+    font-size: 0.7rem;
+}
+h5 {
+    font-size: 0.6rem;
+}
+h6 {
+    font-size: 0.4rem;
+}
+
+p{
+    color: var(--dark_blue);
+    font-size: 0.88rem;
+    font-family: 'nexa-light';
+    text-align: center;
+    line-height: 1.2rem;
+    letter-spacing: 0.059rem;
+    margin-bottom: 1rem;
+
+}
+::placeholder{
+    font-family: 'nexa-light';
+    color: var(--grey_c);
+    font-size:0.9 rem;
+  
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+input{
+        width: 100%;
+        padding: 0.6rem 0rem;
+        font-family:'nexa-light';
+        font-size: 0.8rem;
+        border: 0.1rem solid gray;
+        outline: none;
+        color: var(--grey_c);
+        
+    }    
+
+i{
+    width: 1rem;
+    color:var(--grey_c);
+}    
+
+button{
+    width: 100%;
+    padding: 0.4rem 0.33rem;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    outline: none;
+    font-family: 'nexa-light';
+    letter-spacing: 0.05rem;
+}
+.primary_button {
+    background-color: var(--dark_blue);
+    width: 100%;
+    color: var(--white);
+    cursor: pointer;
+}
+.second_button {
+    background-color:var(--dodgle-blue);
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    border-style: none;
+    /*  padding: 0.6rem 1rem; */
+    padding: 0.6rem;
+    color: var(--white);   
+}
+.third_button {
+  /*  background-color:var(--lightgrey);*/
+    color: var(--dark_blue);
+    width: 100%;
+    font-family: 'nexa-bold';
+    
+}
+
+select {
+    background: none;
+    font-size: 1rem;
+}
+select option {
+    font-size: 1.1rem;
+}
+
+a,i {
+    cursor: pointer;
+    text-decoration: none;
+}
+label{
+    cursor: default;
+    font-family: 'nexa-light';
+}
+
+/* .........work....................................................... */
+
+
+li{
+    color: var(--grey_c);
+    font-size: 1rem;
+    padding: 0.2rem auto ;
+    font-family:'nexa-light';
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .....foooter......... */
+footer{
+    padding: 2rem 1rem;
+    text-align: center;
+    background: var(--dark_blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    color: var(--white_dark);
+   }
+
+
+
+/* ............tablet................................... */
+
+
+
+@media only screen and ( min-width:768px) {
+
+    nav{
+        padding: 1.5rem 2rem;
+    }
+    
+    section{
+        padding: 2rem ;
+    }
+    h1{
+        margin: 0rem 0rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    h2{
+        font-size:1.3rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    h4{
+        font-size: 0.91rem;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.059rem;
+        
+        margin: 1rem ;
+
+    }
+    form {
+        flex-direction: row;
+    }
+     
+    
+  
+    li{
+         font-size: 1rem;
+         padding: 0.2rem auto ;
+    }
+    span{
+        padding: 1rem;
+    }
+    footer {
+        padding:2rem ;
+        background: var(--white);
+        color: var(--dark_blue);
+    }
+
+    
+}
+
+
+
+/* ....................................................*/
+/* ................................................... */
+/* ............Desktop................................... */
+
+
+@media only screen and ( min-width:1024px){
+
+
+    h1,h2,h3,h4,h5,h6,p,li,a{
+        margin: 0rem;
+        padding:0rem;
+    }
+    h1{
+        text-align: start;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        
+    }
+    h2{
+        margin: 1.5rem 0rem;
+        font-size: 1.5rem;
+
+    }
+    h3{
+        font-size: 1.2rem;
+        
+    }
+    p{
+        text-align: start;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        
+    }
+    ::placeholder {
+        font-size: 1rem;
+    }
+    nav{
+            padding: 2rem 4rem;
+        }
+    section {
+        padding: 3rem 4rem;
+    }   
+    
+    li{
+         
+         font-size: 1rem;
+         padding: 0.2rem auto ;
+        }
+    
+  
+    nav a {
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    
+    form {
+        flex-direction: row;
+        width: 100%;
+    }
+
+
+    li span{
+         padding: 2rem;
+     }
+
+
+
+
+/* ....................footer................ */
+
+footer {
+    padding: 2rem 4rem;
+    border-bottom: 0.5rem var( --dodgle-blue);
+    
+    
+    }
+
+
+
+
+
+}
+
+
+
+
+

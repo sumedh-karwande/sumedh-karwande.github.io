@@ -1,0 +1,74 @@
+* body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    padding: 0.9rem;
+    background-color: white;
+    color:#525659 ;
+   }
+
+   nav img {
+    width: 4.5rem;
+    height: 2rem;
+}
+ span {
+     float: right;
+     padding-right: 0.5rem;
+ }
+.intro {
+   display: flex;
+    background-color:lightblue;
+   flex-direction: column;
+   text-align: center;
+   padding: 1rem;
+    }
+.intro h1 {
+   margin-bottom: 0.08rem;
+   font-family: Nexa-Bold;
+   font-size:2.2rem;
+   } 
+.intro p {
+    font-family:'Nexa-Light';
+
+}    
+.intro input {
+    margin: 0.3rem;
+    margin-left: 1rem;
+    margin-right:1rem;
+    padding: 1rem;
+    }
+.intro button {
+   justify-content: space-around;
+   margin: auto;
+   padding: 0.5rem;
+   margin-left: 7rem;
+   margin-right: 7rem;
+   background-color:rgb(64, 64, 163);
+   color: cornsilk;
+  
+}
+
+@font-face {
+    font-family:"Nexa-Bold" ;
+    src: url('Nexa-Bold.otf');
+    font-weight: 0.5rem;
+    font-style:normal;
+    }
+@font-face {
+    font-family:"Nexa-Light";
+    src: url('Nexa-Light.otf');
+    font-style: normal;
+    
+}   
+/*  consulatation
+ <ol>
+            <li> 02 Upload Medical Reports</li>
+            <li> 03 Consult with doctor </li>
+            <li> 04 Fix surgery</li>
+            <li> 05 Hospital sent estimates</li>
+            <li> 06 Payment</li>
+            <li> 07 Surgery completed</li>
+        </ol>
+*/ 
+

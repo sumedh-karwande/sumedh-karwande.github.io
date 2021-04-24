@@ -1,0 +1,514 @@
+/**********Nav Bar********************************/
+/*************Nav Bar*****************************/
+nav .nav_log {
+  width: 6.5rem;
+}
+
+nav .Desktop_nav {
+  display: none;
+}
+
+/***********Cardic Delhi**********/
+.cardic_delhi {
+  display: none;
+}
+
+/*********Dr list sort by***************/
+.Dr_list_sorting {
+  padding-bottom: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Dr_list_sorting h2 {
+  padding-top: 0.4rem;
+  margin: 0rem;
+}
+
+.Dr_list_sorting button {
+  width: 5.8rem;
+}
+
+/********Dr informatio************************/
+.Dr_information .Dr_list {
+  /**************filter********************************/
+  /**************Experts Details***********************/
+}
+
+.Dr_information .Dr_list .filter {
+  display: none;
+}
+
+.Dr_information .Dr_list .experts_details .Dr_details {
+  border: 0.1rem solid var(--lightgrey);
+  margin-bottom: 1rem;
+}
+
+.Dr_information .Dr_list .experts_details .Dr_details .part1 {
+  padding: 1rem 0rem;
+}
+
+.Dr_information .Dr_list .experts_details .Dr_details .part1 .Drname h2 {
+  color: var(--dodgle-blue);
+  position: relative;
+  margin-left: 1.9rem;
+}
+
+.Dr_information .Dr_list .experts_details .Dr_details .part1 .Drname ::before {
+  content: "";
+  position: absolute;
+  border-bottom: 0.19rem solid;
+  width: 1.8rem;
+  top: 0.4rem;
+  left: -2rem;
+}
+
+.Dr_information .Dr_list .experts_details .Dr_details .part1 .Drinfo_list ul {
+  padding: 0.5rem 0rem;
+}
+
+.Dr_information .Dr_list .experts_details .Dr_details .part1 .Drinfo_list ul li {
+  padding: 0.5rem;
+}
+
+.Dr_information .Dr_list .experts_details .Dr_details .part1 .Drinfo_list ul li h4 {
+  font-size: 0.9rem;
+}
+
+.Dr_information .Dr_list .experts_details .Dr_details .part1 .Drinfo_list ul li h4 i {
+  color: var(--dodgle-blue);
+  padding-right: 0.5rem;
+}
+
+.Dr_information .Dr_list .experts_details .Dr_details .part1 .book_apot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Dr_information .Dr_list .experts_details .Dr_details .part1 .book_apot button {
+  width: 60%;
+}
+
+.Dr_information .Dr_list .experts_details .Dr_details .Drimage1 {
+  height: 25rem;
+}
+
+/**********Help**********************/
+.help {
+  background-color: var(--lightbg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help .help_hp h1 {
+  color: var(--white);
+}
+
+.help .enquiry_button {
+  width: 60%;
+}
+
+/**********footer**************/
+.Footer .first_row {
+  display: contents;
+}
+
+.Footer .first_row .footer_image {
+  width: 12rem;
+}
+
+.Footer .first_row ul {
+  padding: 1rem;
+}
+
+.Footer .first_row ul li {
+  color: var(--white);
+  padding: 0.5rem;
+}
+
+.Footer .first_row ul li h1 {
+  color: var(--white);
+}
+
+.Footer .second_row .socail-media {
+  display: none;
+}
+
+.Footer .second_row .copy-rights h3 {
+  color: var(--white);
+}
+
+.Footer .second_row .copy-rights h3 i {
+  color: var(--white);
+}
+
+/**********Tablet Views***/
+@media only screen and (min-width: 768px) {
+  /********Cardic Delhi********/
+  .cardic_delhi {
+    height: 10rem;
+    display: block;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(133, 178, 196, 0.8)), to(rgba(121, 145, 155, 0.8))), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png");
+    background-image: linear-gradient(rgba(133, 178, 196, 0.8), rgba(121, 145, 155, 0.8)), url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Doctors.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .cardic_delhi h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 4.5rem;
+  }
+  .cardic_delhi h1 a {
+    padding-left: 0.4rem;
+  }
+  /**********Dr list sorting by**********************/
+  .Dr_list_sorting {
+    padding-bottom: 2rem;
+  }
+  .Dr_list_sorting button {
+    width: 7rem;
+    height: 2.5rem;
+  }
+  /********Dr informatio************************/
+  .Dr_information {
+    padding-top: 0rem;
+  }
+  .Dr_information .Dr_list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 75%;
+        grid-template-columns: 25% 75%;
+    grid-column-gap: 0.8rem;
+    /***************filter****************************/
+    /**************Experts Details***********************/
+  }
+  .Dr_information .Dr_list .filter {
+    display: initial;
+  }
+  .Dr_information .Dr_list .filter form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Dr_information .Dr_list .filter form button {
+    height: 2.3rem;
+    text-align: start;
+    padding-left: 0.8rem;
+  }
+  .Dr_information .Dr_list .filter form .selcted {
+    display: none;
+  }
+  .Dr_information .Dr_list .filter form .tratment_filter {
+    border-bottom: 0.1rem solid var(--lightgrey);
+    width: 100%;
+    padding-top: 0.8rem;
+  }
+  .Dr_information .Dr_list .filter form .tratment_filter h4 {
+    color: lightskyblue;
+  }
+  .Dr_information .Dr_list .filter form .tratment_filter h3, .Dr_information .Dr_list .filter form .tratment_filter h4 {
+    padding: 0.8rem 0rem;
+    margin-left: 0.5rem;
+  }
+  .Dr_information .Dr_list .filter form .tratment_filter h3 i, .Dr_information .Dr_list .filter form .tratment_filter h4 i {
+    color: var(--dodgle-blue);
+    padding-right: 1.9rem;
+    position: relative;
+  }
+  .Dr_information .Dr_list .filter form .tratment_filter h3 ::after, .Dr_information .Dr_list .filter form .tratment_filter h4 ::after {
+    content: "";
+    position: absolute;
+    border-bottom: 0.25rem solid lightgray;
+    width: 1.5rem;
+    margin-left: 1.2rem;
+    top: 0.5rem;
+  }
+  .Dr_information .Dr_list .filter form .tratment_filter h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Dr_information .Dr_list .filter form .tratment_filter .input_lable {
+    display: block;
+    padding: 0.1rem 0rem;
+    margin-left: 0.5rem;
+  }
+  .Dr_information .Dr_list .filter form .tratment_filter .input_lable input {
+    width: 1rem;
+    margin: 0rem;
+    font-family: 'nexa-bold';
+    color: var(--dark_blue);
+  }
+  .Dr_information .Dr_list .filter form .tratment_filter .input_lable label {
+    font-size: 0.8rem;
+  }
+  .Dr_information .Dr_list .experts_details {
+    width: 97.5%;
+  }
+  .Dr_information .Dr_list .experts_details .Dr_details {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+  }
+  .Dr_information .Dr_list .experts_details .Dr_details .part1 .Drname h2 {
+    margin-left: 2.5rem;
+  }
+  .Dr_information .Dr_list .experts_details .Dr_details .part1 .Drname ::before {
+    left: -2.5rem;
+    width: 2.5rem;
+  }
+  .Dr_information .Dr_list .experts_details .Dr_details .part1 .Drinfo_list ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    padding: 1rem 0rem 1rem 2.5rem;
+  }
+  .Dr_information .Dr_list .experts_details .Dr_details .part1 .Drinfo_list ul li {
+    padding: 0.5rem 0rem 0.5rem;
+  }
+  .Dr_information .Dr_list .experts_details .Dr_details .part1 .Drinfo_list ul li h4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Dr_information .Dr_list .experts_details .Dr_details .part1 .Drinfo_list ul li h4 span {
+    padding: 0rem;
+    margin-left: 0.3rem;
+  }
+  .Dr_information .Dr_list .experts_details .Dr_details .part1 .book_apot {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-left: 2.5rem;
+  }
+  .Dr_information .Dr_list .experts_details .Dr_details .Drimage1 {
+    height: auto;
+  }
+  /******************Help***************/
+  .help .enquiry_button {
+    width: 30%;
+  }
+  /****************Footer**************************/
+  .Footer {
+    border-bottom: 0.5rem solid var(--dodgle-blue);
+  }
+  .Footer .first_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Footer .first_row .footer_image {
+    width: 9rem;
+  }
+  .Footer .first_row ul {
+    padding: 0rem;
+  }
+  .Footer .first_row ul .s_media_name {
+    display: none;
+  }
+  .Footer .first_row ul li {
+    color: var(--dark_blue);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.5rem 0.8rem 0.5rem 0rem;
+  }
+  .Footer .second_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .Footer .second_row .socail-media {
+    display: initial;
+  }
+  .Footer .second_row .socail-media i {
+    color: var(--dark_blue);
+    padding: 0rem;
+    padding-left: 0.8rem;
+  }
+  .Footer .second_row .copy-rights h3 {
+    color: var(--dark_blue);
+    font-size: 0.9rem;
+  }
+  .Footer .second_row .copy-rights h3 i {
+    color: var(--dark_blue);
+  }
+}
+
+/*********Desktop views (1024px)*********************/
+@media only screen and (min-width: 1024px) {
+  /******************Nav Bar**************************/
+  nav #list_toggle {
+    display: none;
+  }
+  nav .nav_log {
+    width: 13rem;
+  }
+  nav .Desktop_nav {
+    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  nav .Desktop_nav .navbar_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .Desktop_nav .navbar_buttons button {
+    width: 10rem;
+    height: 3rem;
+    padding: 0rem 1rem;
+    border-radius: 0.3rem;
+  }
+  nav .Desktop_nav .navbar_buttons .login-button {
+    margin-right: 0.5rem;
+    border: 0.1rem solid;
+    border: 0.05rem solid var(--dark_blue);
+    background-color: var(--white);
+    color: var(--dark_blue);
+  }
+  nav .Desktop_nav .navbar_buttons .quote-button {
+    background-color: var(--dark_blue);
+    color: var(--white);
+  }
+  nav .Desktop_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4rem;
+  }
+  nav .Desktop_nav ul li {
+    padding-top: 1rem;
+  }
+  nav .Desktop_nav ul li a {
+    padding: 1rem;
+  }
+  /*************DR information*******************************/
+  .Dr_information .Dr_list {
+    grid-column-gap: 3rem;
+    /***********Experts details*********************/
+  }
+  .Dr_information .Dr_list .filter form .selcted {
+    display: initial;
+  }
+  .Dr_information .Dr_list .filter form .selcted ul {
+    padding-top: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .Dr_information .Dr_list .filter form .selcted ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    font-size: 0.8rem;
+    border: 0.1rem solid gainsboro;
+    border-radius: 1rem;
+    padding: 0.5rem 0.2rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
+    font-size: 0.7rem;
+  }
+  .Dr_information .Dr_list .filter form .selcted ul li i {
+    padding-left: 0.4rem;
+    color: lightskyblue;
+  }
+  .Dr_information .Dr_list .filter form .selcted ul li span {
+    padding: 0rem;
+    margin-left: 0.38rem;
+    font-family: 'nexa-bold';
+    color: var(--dark_blue);
+  }
+  .Dr_information .Dr_list .experts_details {
+    width: 95%;
+  }
+  .Dr_information .Dr_list .experts_details .Dr_details .book_apot {
+    width: 50%;
+  }
+  .Dr_information .Dr_list .experts_details .Dr_details .Drimage1 {
+    height: 20rem;
+  }
+  /*************Help***************************/
+  .help {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .help .help_hp p {
+    margin-bottom: 0rem;
+  }
+  .help .enquiry_button {
+    width: 20%;
+    padding-top: 0.5rem;
+  }
+  .help .enquiry_button .second_button {
+    height: 3.2rem;
+    font-size: 0.9rem;
+  }
+  /************************foooter****************/
+}
+/*# sourceMappingURL=doctor.css.map */
