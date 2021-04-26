@@ -264,11 +264,11 @@ nav .Desktop_nav {
   padding: 0.8rem;
 }
 
-.Footer .second_row .copy-rights h3 {
+.Footer .second_row .copy-rights p {
   color: var(--white);
 }
 
-.Footer .second_row .copy-rights h3 i {
+.Footer .second_row .copy-rights p i {
   color: var(--white);
 }
 
@@ -415,11 +415,12 @@ nav .Desktop_nav {
     padding: 0rem;
     padding-left: 0.8rem;
   }
-  .Footer .second_row .copy-rights h3 {
+  .Footer .second_row .copy-rights p {
+    margin: 0rem;
     color: var(--dark_blue);
     font-size: 0.9rem;
   }
-  .Footer .second_row .copy-rights h3 i {
+  .Footer .second_row .copy-rights p i {
     color: var(--dark_blue);
   }
 }
@@ -527,6 +528,24 @@ nav .Desktop_nav {
   .expertsDr .expertsDr_info {
     -ms-grid-columns: (25%)[4];
         grid-template-columns: repeat(4, 25%);
+  }
+  .expertsDr .dotss {
+    margin-top: 2rem;
+  }
+  .expertsDr .dotss .dott {
+    cursor: pointer;
+    margin-right: 0.5rem;
+    background-color: var(--lightgrey);
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+  }
+  .expertsDr .dotss .dott:hover {
+    background-color: #ddc6c6;
+  }
+  .expertsDr .dotss span {
+    padding: 0.5rem;
   }
   /***********Treatment*****/
   /*......treatment.......................  */
