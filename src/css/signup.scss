@@ -1,0 +1,151 @@
+/*************Nav Bar*****************************/
+nav {
+    .nav_log {
+        width: 6.5rem;
+    }
+    .Desktop_nav {
+        display: none;
+    }
+}
+
+/*****************main login*********************************************/
+.main {
+    background-color: var(--lightbg-color);
+    text-align: center;
+    form {
+        display:block;
+        padding: 1rem 0rem;
+        .login {
+            background-color: var(--white);
+            
+            h2 {
+                color: var(--dodgle-blue);
+                padding: 1rem;
+                border-bottom: 0.1rem solid var(--lightgrey);
+            }
+            .input {
+                padding: 1rem;
+                .Enter_input {
+                    border: 0.1rem solid var(--lightgrey);
+                    margin-bottom: 0.5rem;
+                    display: flex;
+                    align-items: center;
+                    input {
+                        border: none;
+                        padding: 1rem;
+                        
+                    }
+                    
+                }
+                .login-button {
+                    button {
+                        height: 3rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0rem 5% 0rem 40%;
+                        i {
+                            color: var(--white);
+                        }
+                    }
+                }
+                h4 {
+                    padding-top: 1rem;
+                    span {
+                        color: var(--dodgle-blue);
+                        padding-left: 0.2rem;
+                    }
+                }
+            }
+        }    
+    }
+    .copy-rights {
+        h4 {
+            i {
+                color: var(--dark_blue);
+            }
+        }
+    }
+}
+
+
+/**********************Tablet Views*******************************/
+ 
+@media only screen and ( min-width:768px) {
+    .main {
+        form {
+            width: 60%;
+            display: inline-block;
+            padding: 5rem 0rem;
+        }
+    }
+}
+  /*********Desktop views (1024px)*********************/
+@media only screen and ( min-width:1024px) {
+
+    /******************Nav Bar**************************/
+    nav {
+        #list_toggle {
+            display: none;
+        }
+        .nav_log {
+            width: 13rem;
+        }
+        .Desktop_nav {
+            display: initial;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            .navbar_buttons {
+                display: flex;
+
+                button {
+                    width: 10rem;
+                    height: 3rem;
+                    padding: 0rem 1rem;
+                    border-radius: 0.3rem;
+                    
+                }
+
+                .login-button {
+                    margin-right: 0.5rem;
+                    border: 0.1rem solid var(--dark_blue);
+                    background-color: var(--white);
+                    color: var(--dark_blue);
+                    font-family: 'nexa-bold';
+                }
+                
+                .quote-button {
+                    
+                    background-color: var(--dark_blue);
+                    color: var(--white);
+                }
+
+            }
+
+            ul {
+                display: flex;
+                margin-right: 4rem;
+
+                li {
+                    padding-top: 1rem;
+                    a {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    /**************main****************************/
+    .main {
+        form {
+            width: 40%;
+            display: inline-block;
+            
+        }
+    }
+    
+
+} 
+/*************************End**********************/   

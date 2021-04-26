@@ -1,0 +1,152 @@
+/*************Nav Bar*****************************/
+nav .nav_log {
+  width: 6.5rem;
+}
+
+nav .Desktop_nav {
+  display: none;
+}
+
+/*****************main login*********************************************/
+.main {
+  background-color: var(--lightbg-color);
+  text-align: center;
+}
+
+.main form {
+  display: block;
+  padding: 1rem 0rem;
+}
+
+.main form .login {
+  background-color: var(--white);
+}
+
+.main form .login h2 {
+  color: var(--dodgle-blue);
+  padding: 1rem;
+  border-bottom: 0.1rem solid var(--lightgrey);
+}
+
+.main form .login .input {
+  padding: 1rem;
+}
+
+.main form .login .input .Enter_input {
+  border: 0.1rem solid var(--lightgrey);
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main form .login .input .Enter_input input {
+  border: none;
+  padding: 1rem;
+}
+
+.main form .login .input .login-button button {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0rem 5% 0rem 40%;
+}
+
+.main form .login .input .login-button button i {
+  color: var(--white);
+}
+
+.main form .login .input h4 {
+  padding-top: 1rem;
+}
+
+.main form .login .input h4 span {
+  color: var(--dodgle-blue);
+  padding-left: 0.2rem;
+}
+
+.main .copy-rights h4 i {
+  color: var(--dark_blue);
+}
+
+/**********************Tablet Views*******************************/
+@media only screen and (min-width: 768px) {
+  .main form {
+    width: 60%;
+    display: inline-block;
+    padding: 5rem 0rem;
+  }
+}
+
+/*********Desktop views (1024px)*********************/
+@media only screen and (min-width: 1024px) {
+  /******************Nav Bar**************************/
+  nav #list_toggle {
+    display: none;
+  }
+  nav .nav_log {
+    width: 13rem;
+  }
+  nav .Desktop_nav {
+    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  nav .Desktop_nav .navbar_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .Desktop_nav .navbar_buttons button {
+    width: 10rem;
+    height: 3rem;
+    padding: 0rem 1rem;
+    border-radius: 0.3rem;
+  }
+  nav .Desktop_nav .navbar_buttons .login-button {
+    margin-right: 0.5rem;
+    border: 0.1rem solid var(--dark_blue);
+    background-color: var(--white);
+    color: var(--dark_blue);
+    font-family: 'nexa-bold';
+  }
+  nav .Desktop_nav .navbar_buttons .quote-button {
+    background-color: var(--dark_blue);
+    color: var(--white);
+  }
+  nav .Desktop_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4rem;
+  }
+  nav .Desktop_nav ul li {
+    padding-top: 1rem;
+  }
+  nav .Desktop_nav ul li a {
+    padding: 1rem;
+  }
+  /**************main****************************/
+  .main form {
+    width: 40%;
+    display: inline-block;
+  }
+}
+
+/*************************End**********************/
+/*# sourceMappingURL=signup.css.map */

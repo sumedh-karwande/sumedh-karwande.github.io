@@ -604,8 +604,6 @@ nav .Desktop_nav {
   }
   .Treatment .dotss .dott {
     cursor: pointer;
-    height: 5px;
-    width: 5px;
     margin-right: 0.5rem;
     background-color: var(--lightgrey);
     border-radius: 50%;
@@ -615,6 +613,9 @@ nav .Desktop_nav {
   }
   .Treatment .dotss .dott:hover {
     background-color: #ddc6c6;
+  }
+  .Treatment .dotss span {
+    padding: 0.5rem;
   }
   /*......treatment.end......................  */
   /**********Services*******************************/

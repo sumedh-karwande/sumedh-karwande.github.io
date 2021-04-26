@@ -178,10 +178,15 @@ nav {
        display: flex;
        justify-content:flex-start;
        padding-top:4.5rem;
+       font-family: 'nexa-light';
        
     }
     .cardic_delhi h1 a {
         padding-left: 0.4rem;
+        color: var(--dark_blue);
+        text-decoration: underline;
+        font-family: 'nexa-bold';
+        text-decoration-thickness: 0.2rem;
     }
     /**********Dr list sorting by**********************/
     .Dr_list_sorting {
@@ -242,7 +247,7 @@ nav {
                                border-bottom:0.25rem solid lightgray;
                                width: 1.5rem;
                                margin-left: 1.2rem;
-                               top: 0.5rem;
+                               top: 0.35rem;
                                
                             }
                         }
@@ -263,6 +268,8 @@ nav {
                             }
                             label {
                                 font-size: 0.8rem;
+                                font-family: 'nexa-bold';
+                                color: var(--dark_blue);
                             }
                         }
 
@@ -315,6 +322,9 @@ nav {
                     
                     .Drimage1 {
                             height: auto;
+                    }
+                    #extra_height {
+                        height: 14.5rem;
                     }
                         
                     
@@ -481,18 +491,37 @@ nav {
                             }
                         }
                     }
+                    .tratment_filter {
+                        h3 {
+                            i {
+                                padding-right: 2.5rem;
+                            }
+                            ::after {
+                                margin-left: 2rem;
+                            }
+                        }
+                    }
                 }
             }
             /***********Experts details*********************/
             .experts_details {
                 width: 95%;
                 .Dr_details {
+                    .part1 {
+                        .Drinfo_list {
+                            ul {
+                                
+                                padding: 0rem 0rem 2.5rem 2.5rem;
+                            }
+                        }
+                    }
                     .book_apot {
                         width: 50%;
                     }
-                    .Drimage1 {
-                        height: 20rem;
+                    .Drimage1 ,#extra_height {
+                        height: 17.5rem;
                     }
+                  
                     
                 }
                   

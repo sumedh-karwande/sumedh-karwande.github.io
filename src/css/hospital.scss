@@ -31,6 +31,79 @@ nav {
     }
 }
 
+/**************Hospital information*********************/
+.H_information {
+    .H_list {
+        .filter {
+            display: none;
+        }
+        .xyz_hospitals {
+            .Hospital_details{
+                border: 0.1rem solid var(--lightgrey);
+                margin-bottom: 0.5rem;
+                .part1 {
+                    
+                    .Hname{
+                        padding: 1rem;
+                        h2 {
+                            color: var(--dodgle-blue);
+                            position: relative;
+                            margin-left: 1rem;
+                        }
+                        h2::before {
+                            content: "";
+                            position: absolute;
+                            border-bottom: 0.19rem solid;
+                            width: 1.8rem;
+                            top: 0.4rem;
+                            left: -2rem;
+                        }
+                    }
+                    .Hinfo_list {
+                        ul {
+                            margin-left: 1.9rem;
+                            li {
+                                padding-bottom: 0.5rem;
+                                h3 {
+                                    display: flex;
+                                    align-items: center;
+                                    i {
+                                        color: var(--dodgle-blue);
+                                        padding-right: 0.8rem;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .H_specific {
+                        ul {
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-left: 1.5rem;
+                            li {
+                                border: 0.1rem solid var(--lightgrey);
+                                border-radius: 1rem;
+                                width: fit-content;
+                                padding: 0.5rem;
+                                margin: 0.1rem;
+                                font-family: 'nexa-light';
+                                font-size: 0.9rem;
+                                font-weight: 600;
+                                color: var(--dark_blue);
+                            }
+                        }
+                    }
+                    .book_apot {
+                        padding: 1rem 27%;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
  /**********Help**********************/
 .help {
     background-color: var(--lightbg-color);
@@ -96,6 +169,48 @@ nav {
         button {
             width: 7rem;
             height: 2.5rem;
+        }
+    }
+    /**************Hospital information*********************/
+    .H_information {
+        .H_list {
+            .filter {
+                display: none;
+            }
+            .xyz_hospitals {
+                .Hospital_details {
+                    display: grid;
+                    grid-template-columns: 70% 30%;
+                    .part1 {
+                        .Hinfo_list {
+                            ul{
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                li span {
+                                    padding: 0rem 1rem;
+                                }
+                            }
+                            
+                        }
+                        .H_specific {
+                            ul {
+                                padding-bottom: 3rem;
+                                li {
+                                    span {
+                                        padding: 0.3rem;
+                                    }
+                                }
+                            }
+                        }
+                        .book_apot {
+                            width: 11rem;
+                            margin-left: 1rem;
+                            padding: 1rem;
+
+                        }
+                    }  
+                }
+            }
         }
     }
 
@@ -230,10 +345,103 @@ nav {
        display: flex;
        justify-content:flex-start;
        padding-top:4.5rem;
+       font-family: 'nexa-light';
        
     }
     .cardic_delhi h1 a {
         padding-left: 0.4rem;
+        font-family: 'nexa-bold';
+        text-decoration: underline;
+        text-decoration-thickness: 0.25rem;
+        color: var(--dark_blue);
+    }
+
+    /**************Hospital information*********************/
+    .H_information {
+        .H_list {
+            display: grid;
+            grid-template-columns: 25% 75%;
+            grid-column-gap: 3rem;
+            
+            .filter {
+                display: initial;
+                form {
+                    flex-direction: column;
+                    button {
+                        height: 2.3rem;
+                        text-align: start;
+                        padding-left: 0.8rem;
+                    }
+
+                    .tratment_filter {
+                        border-bottom: 0.1rem solid var(--lightgrey);;
+                        width: 100%;
+                        padding-top: 0.8rem;
+                        
+                        
+                        
+                        h4 {
+                            color: lightskyblue;
+                        }
+                        h3,h4 {
+                            
+                            padding: 0.8rem 0rem;
+                            margin-left: 0.5rem;
+                            i{
+                                color: var(--dodgle-blue);
+                                padding-right: 3rem;
+                                position: relative; 
+                            }
+                            ::after {
+                                content: "";
+                               position: absolute;
+                               border-bottom:0.25rem solid lightgray;
+                               width: 1.5rem;
+                               margin-left: 2.3rem;
+                               top: 0.35rem;
+                               
+                            }
+                        }
+                        h3 {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        .input_lable {
+                            display: block;
+                            padding: 0.1rem 0rem;
+                            margin-left: 0.5rem;
+                            input {
+                                width: 1rem;
+                                margin: 0rem;
+                                font-family: 'nexa-bold';
+                                color: var(--dark_blue);
+
+                            }
+                            label {
+                                font-size: 0.8rem;
+                                font-family: 'nexa-bold';
+                                color: var(--dark_blue);
+                            }
+                        }
+
+                     
+                    }
+                }
+            }
+
+            /*************Hospital********************/
+            .xyz_hospitals {
+                .Hospital_details {
+                    .part1 {
+                        .H_specific {
+                            ul {
+                                padding: 0rem 1rem 3rem 2.5rem;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
     }
 
      /************Help*****************/

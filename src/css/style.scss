@@ -650,8 +650,7 @@ $treatment_gra2:rgba(17, 10, 26,0.9);
             margin-top: 2rem;
             .dott{
                 cursor: pointer;
-                height: 5px;
-                width: 5px;
+                
                 margin-right: 0.5rem;
                 background-color: var(--lightgrey);
                 border-radius: 50%;
@@ -660,6 +659,10 @@ $treatment_gra2:rgba(17, 10, 26,0.9);
                 &:hover {
                     background-color: #ddc6c6;
                 }
+               
+            }
+            span {
+                padding: 0.5rem;
             }
         }
     }
