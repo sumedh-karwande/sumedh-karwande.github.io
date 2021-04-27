@@ -23,8 +23,7 @@ body {
         text-align: center;
         
         form {
-           /* display:block; */
-           /* padding: 6.5rem 0rem; */
+           
            display: contents;
             .login {
                 background-color: var(--white);
@@ -64,7 +63,7 @@ body {
                     }
                     h4 {
                         padding-top: 1rem;
-                        span {
+                        a {
                             color: var(--dodgle-blue);
                             padding-left: 0.2rem;
                         }
@@ -94,7 +93,7 @@ body {
             form {
                 width: 60%;
                 display: inline-block;
-               /* padding: 5rem 0rem; */
+               
             }
         }
     }

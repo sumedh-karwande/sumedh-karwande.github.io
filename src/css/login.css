@@ -34,8 +34,6 @@ body .main {
 }
 
 body .main form {
-  /* display:block; */
-  /* padding: 6.5rem 0rem; */
   display: contents;
 }
 
@@ -95,7 +93,7 @@ body .main form .login .input h4 {
   padding-top: 1rem;
 }
 
-body .main form .login .input h4 span {
+body .main form .login .input h4 a {
   color: var(--dodgle-blue);
   padding-left: 0.2rem;
 }
@@ -113,7 +111,6 @@ body footer h4 i {
   body .main form {
     width: 60%;
     display: inline-block;
-    /* padding: 5rem 0rem; */
   }
 }
 

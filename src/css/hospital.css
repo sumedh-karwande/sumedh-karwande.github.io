@@ -162,11 +162,11 @@ nav .Desktop_nav {
   display: none;
 }
 
-.Footer .second_row .copy-rights h3 {
+.Footer .second_row .copy-rights p {
   color: var(--white);
 }
 
-.Footer .second_row .copy-rights h3 i {
+.Footer .second_row .copy-rights p i {
   color: var(--white);
 }
 
@@ -267,11 +267,11 @@ nav .Desktop_nav {
     padding: 0rem;
     padding-left: 0.8rem;
   }
-  .Footer .second_row .copy-rights h3 {
+  .Footer .second_row .copy-rights p {
     color: var(--dark_blue);
     font-size: 0.9rem;
   }
-  .Footer .second_row .copy-rights h3 i {
+  .Footer .second_row .copy-rights p i {
     color: var(--dark_blue);
   }
 }

@@ -178,6 +178,8 @@ button {
 select {
   background: none;
   font-size: 1rem;
+  font-family: 'nexa-light';
+  font-weight: 600;
 }
 
 select option {

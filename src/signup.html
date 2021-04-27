@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing Up</title>
+    <title>Sign Up</title>
     <link href="./css/reset.css" type="text/css" rel="stylesheet">
     <link href="./css/theme.css" type="text/css" rel="stylesheet">
     <link href="./css/signup.css" type="text/css" rel="stylesheet">
@@ -55,58 +55,60 @@
                 <div class="input">
                     <div class="Enter_input">
                         <input type="text" placeholder="Enter Name">
-                       
-                    </div>
-    
-                    <div class="Enter_input">
-                        <input type="text" placeholder="Enter Email">
-                    </div>
-
-                    <div class="Enter_input">
-                        <input type="text" placeholder="Enter Password">
-                       
-                    </div>
-    
-                    <div class="Enter_input">
-                        <input type="text" placeholder="Select your gender">
                         
                     </div>
-
-                    <div class="Enter_input">
-                        <input type="text" placeholder="dd/mm/yyyy">
-                       
-                    </div>
     
                     <div class="Enter_input">
-                        <input type="text" placeholder="Enter Phone Number">
+                        <input type="email" placeholder="Enter Email">
                     </div>
 
                     <div class="Enter_input">
-                        <input type="text" placeholder="Enter Mobile Number">
-                       
-                    </div>
-    
-                    <div class="Enter_input">
-                        <input type="text" placeholder="Enter city">
+                        <input type="password" placeholder="Enter Password">
                     </div>
 
                     <div class="Enter_input">
-                        <input type="text" placeholder="Enter State">
+                        
+                        <select name="gender">
+                            <option value="Select Your Gender">Select your Gender</option>
+                            <option  value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+
                     </div>
 
                     <div class="Enter_input">
-                        <input type="text" placeholder="Select your country">
-                       
+                        <input type="date" placeholder="dd/mm/yyyy">
                     </div>
-    
+
+                    <div class="Enter_input">
+                        <input type="tel" placeholder="Enter Phone Number">
+                    </div>
                     
-    
+                    <div class="city_state">
+                         <div class="Enter_input">
+                             <input type="text" placeholder="Enter City">
+                         </div>
+     
+                         <div class="Enter_input">
+                             <input type="text" placeholder="Enter State">
+                         </div>
+                   </div>
+
+                    <div class="Enter_input">
+                        <select name="country">
+                            <option value="Select your Country">Select your Country</option>
+                            <option value="india">India</option>
+                            <option value="UK">UK</option>
+                            <option value="US">US</option>
+                        </select>
+                    </div>
     
                     <div class="login-button">
                         <button class="primary_button" type="submit">LOGIN  <i class="fas fa-arrow-right"></i></button>
                        
                     </div>
-                    <h4>Not Registered?<span>Sign Up</span></h4>
+                    <h4>Not Registered?<a href="./login.html">Login</a></h4>
     
                 </div>
     
@@ -115,13 +117,11 @@
 
         </form>
 
-        <div class="copy-rights">
-            <h4>All Rights Reserved. <i class="far fa-copyright"></i> tavstra 2021 </h4>
-        </div>
-
-
-
     </section>
+    <!-------------------Footer------------------->
+    <footer>
+        <h4>All Rights Reserved. <i class="far fa-copyright"></i> tavstra 2021 </h4>
+    </footer>
 
 </body>
 </html>
