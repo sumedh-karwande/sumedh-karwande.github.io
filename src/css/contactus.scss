@@ -13,8 +13,12 @@ nav {
     background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     .heading {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         h1,p {
             color: var(--white);
         }
@@ -302,6 +306,7 @@ main {
             padding:  0rem;
         }
         .input_area {
+            
             .button_sendM {
                 padding-left: 88%;
             }
