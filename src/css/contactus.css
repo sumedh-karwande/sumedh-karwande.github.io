@@ -1,0 +1,304 @@
+/*************Nav Bar*****************************/
+nav .nav_log {
+  width: 6.5rem;
+}
+
+nav .Desktop_nav {
+  display: none;
+}
+
+/******************header**************/
+.header {
+  background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header .heading {
+  text-align: center;
+}
+
+.header .heading h1, .header .heading p {
+  color: var(--white);
+}
+
+.header .heading h1 {
+  padding: 1rem;
+  font-size: 1.8rem;
+}
+
+/*******************Map**************************/
+.map iframe {
+  width: 100%;
+}
+
+/******************End nav*************/
+main {
+  /*****************************Addrs***************************/
+  /********************input area*****************************/
+}
+
+main .addrs .addrs_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
+}
+
+main .addrs .addrs_content i {
+  color: var(--dodgle-blue);
+  font-size: 1.5rem;
+}
+
+main .addrs .addrs_content .noida {
+  margin-left: 1.8rem;
+}
+
+main .addrs .addrs_content .noida p {
+  margin: 0rem;
+  text-align: start;
+  padding-top: 0.3rem;
+}
+
+main .input_area {
+  background-color: var(--lightbg-color);
+  padding: 1rem;
+}
+
+main .input_area .input .Enter_input {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: var(--white);
+}
+
+main .input_area .input .Enter_input input {
+  border: none;
+  margin-left: 0.5rem;
+}
+
+main .input_area .input .texarea {
+  background-color: var(--white);
+}
+
+main .input_area .input .texarea .Enter_input textarea {
+  padding: 0.6rem 0rem;
+  border: none;
+  margin-left: 0.5rem;
+  font-family: 'nexa-light';
+}
+
+main .input_area .input .texarea .Enter_input #t_area {
+  width: 50%;
+  height: 0.8rem;
+}
+
+main .input_area .button_sendM {
+  padding-left: 55.1%;
+}
+
+main .input_area .button_sendM button {
+  border-radius: 0rem;
+}
+
+/*********************Footer**********************/
+.Footer {
+  border-bottom: 0.5rem solid var(--dodgle-blue);
+}
+
+.Footer .first_row .footer_image {
+  width: 9.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.Footer .first_row ul li {
+  color: var(--white);
+  padding: 0.3rem;
+}
+
+.Footer .second_row .socail-media i {
+  color: var(--white);
+  padding: 0.8rem;
+}
+
+.Footer .second_row .copy-rights p {
+  color: var(--white);
+}
+
+.Footer .second_row .copy-rights p i {
+  color: var(--white);
+}
+
+/********Footer end***************/
+/********Footer end***************/
+/************Meadia Q*******************************/
+/*************Tablet Views (768px)*********************/
+@media only screen and (min-width: 768px) {
+  /*********************Main****************************/
+  main {
+    /**********input area************/
+  }
+  main .addrs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .addrs .addrs_content .noida h3 {
+    font-size: 0.8rem;
+  }
+  main .addrs .addrs_content .noida p {
+    font-size: 0.7rem;
+  }
+  main .input_area .input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .input_area .input .input_info {
+    width: 49.5%;
+  }
+  main .input_area .input .texarea {
+    width: 49.5%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  main .input_area .input .texarea .Enter_input #t_area {
+    width: 100%;
+    height: 5.8rem;
+  }
+  main .input_area .button_sendM {
+    padding-left: 82.5%;
+  }
+  /************************Footer*******************************/
+  .Footer .first_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Footer .first_row ul li {
+    color: var(--dark_blue);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.5rem 0.8rem 0.5rem 0rem;
+  }
+  .Footer .second_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .Footer .second_row .socail-media i {
+    color: var(--dark_blue);
+    padding: 0rem;
+    padding-left: 0.8rem;
+  }
+  .Footer .second_row .copy-rights p {
+    margin: 0rem;
+    color: var(--dark_blue);
+    font-size: 0.9rem;
+  }
+  .Footer .second_row .copy-rights p i {
+    color: var(--dark_blue);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /******************Nav Bar**************************/
+  nav #list_toggle {
+    display: none;
+  }
+  nav .nav_log {
+    width: 13rem;
+  }
+  nav .Desktop_nav {
+    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  nav .Desktop_nav .navbar_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .Desktop_nav .navbar_buttons button {
+    width: 10rem;
+    height: 3rem;
+    padding: 0rem 1rem;
+    border-radius: 0.3rem;
+  }
+  nav .Desktop_nav .navbar_buttons .login-button {
+    margin-right: 0.5rem;
+    border: 0.1rem solid var(--dark_blue);
+    background-color: var(--white);
+    color: var(--dark_blue);
+    font-family: 'nexa-bold';
+  }
+  nav .Desktop_nav .navbar_buttons .quote-button {
+    background-color: var(--dark_blue);
+    color: var(--white);
+  }
+  nav .Desktop_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4rem;
+  }
+  nav .Desktop_nav ul li {
+    padding-top: 1rem;
+  }
+  nav .Desktop_nav ul li a {
+    padding: 1rem;
+  }
+  /**********************Main***************/
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 20% 80%;
+        grid-template-columns: 20% 80%;
+    padding: 0 4rem;
+  }
+  main .addrs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0rem;
+  }
+  main .input_area .button_sendM {
+    padding-left: 88%;
+  }
+}
+
+/********************End*********************/
+/*# sourceMappingURL=contactus.css.map */
