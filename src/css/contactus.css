@@ -178,6 +178,7 @@ main .input_area .button_sendM button {
     font-size: 0.7rem;
   }
   main .input_area {
+    padding: 1rem 2rem;
     /* .button_sendM {
                 
                 padding-left: 82.5%;
