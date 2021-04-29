@@ -51,6 +51,10 @@ main {
   /********************input area*****************************/
 }
 
+main .addrs {
+  padding-top: 0rem;
+}
+
 main .addrs .addrs_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,7 +113,13 @@ main .input_area .input .texarea .Enter_input #t_area {
 }
 
 main .input_area .button_sendM {
-  padding-left: 55.1%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  /* padding-left: 55.1%; */
 }
 
 main .input_area .button_sendM button {
@@ -118,7 +128,7 @@ main .input_area .button_sendM button {
 
 /*********************Footer**********************/
 .Footer {
-  border-bottom: 0.5rem solid var(--dodgle-blue);
+  border-bottom: 1rem solid var(--dodgle-blue);
 }
 
 .Footer .first_row .footer_image {
@@ -167,6 +177,12 @@ main .input_area .button_sendM button {
   main .addrs .addrs_content .noida p {
     font-size: 0.7rem;
   }
+  main .input_area {
+    /* .button_sendM {
+                
+                padding-left: 82.5%;
+            }  */
+  }
   main .input_area .input {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -186,10 +202,19 @@ main .input_area .button_sendM button {
   }
   main .input_area .input .texarea .Enter_input #t_area {
     width: 100%;
-    height: 5.8rem;
+    height: 5.75rem;
   }
-  main .input_area .button_sendM {
-    padding-left: 82.5%;
+  main .input_area .input .texarea .Enter_input textarea::-webkit-input-placeholder {
+    padding-top: 2.8rem;
+  }
+  main .input_area .input .texarea .Enter_input textarea:-ms-input-placeholder {
+    padding-top: 2.8rem;
+  }
+  main .input_area .input .texarea .Enter_input textarea::-ms-input-placeholder {
+    padding-top: 2.8rem;
+  }
+  main .input_area .input .texarea .Enter_input textarea::placeholder {
+    padding-top: 2.8rem;
   }
   /************************Footer*******************************/
   .Footer .first_row {
@@ -300,6 +325,20 @@ main .input_area .button_sendM button {
     -ms-grid-columns: 20% 80%;
         grid-template-columns: 20% 80%;
     padding: 0 4rem;
+    /* .input_area {
+            .input {
+                .texarea {
+                    .Enter_input {
+                        textarea::placeholder {
+                            padding-top: 2rem;
+                        }
+                    }
+                }
+            }
+            .button_sendM {
+                padding-left: 88%;
+            } 
+        } */
   }
   main .addrs {
     -webkit-box-orient: vertical;
@@ -307,9 +346,6 @@ main .input_area .button_sendM button {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 0rem;
-  }
-  main .input_area .button_sendM {
-    padding-left: 88%;
   }
 }
 

@@ -109,8 +109,9 @@ i{
 }    
 
 button{
-    width: 100%;
-    padding: 0.4rem 0.33rem;
+   /* width: 100%; */
+   /* padding: 0.4rem 0.33rem; */
+   padding: 0.6rem 1rem;
     border: none;
     color: var(--white);
     cursor: pointer;
@@ -120,24 +121,24 @@ button{
 }
 .primary_button {
     background-color: var(--dark_blue);
-    width: 100%;
+  /*  width: 100%; */
     color: var(--white);
     cursor: pointer;
 }
 .second_button {
     background-color:var(--dodgle-blue);
-    width: 100%;
+   /* width: 100%; */
     height: 2.5rem;
     border-radius: 0.3rem;
     border-style: none;
-    /*  padding: 0.6rem 1rem; */
-    padding: 0.6rem;
+    /*  padding: 0.6rem 1rem;
+    padding: 0.6rem;  */
     color: var(--white);   
 }
 .third_button {
   /*  background-color:var(--lightgrey);*/
     color: var(--dark_blue);
-    width: 100%;
+  /*  width: 100%; */
     font-family: 'nexa-bold';
     
 }

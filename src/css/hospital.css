@@ -29,7 +29,11 @@ nav .Desktop_nav {
 }
 
 .Dr_list_sorting button {
-  width: 5.8rem;
+  /* width: 5.8rem;*/
+}
+
+.Dr_list_sorting button i {
+  color: var(--dark_blue);
 }
 
 /**************Hospital information*********************/
@@ -107,7 +111,18 @@ nav .Desktop_nav {
 }
 
 .H_information .H_list .xyz_hospitals .Hospital_details .part1 .book_apot {
-  padding: 1rem 27%;
+  /* padding: 1rem 27%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+.H_information .H_list .xyz_hospitals .Hospital_details .part1 .book_apot button {
+  width: 50%;
 }
 
 /**********Help**********************/
@@ -126,14 +141,13 @@ nav .Desktop_nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* .enquiry_button {
+         width: 60%;
+    } */
 }
 
 .help .help_hp h1 {
   color: var(--white);
-}
-
-.help .enquiry_button {
-  width: 60%;
 }
 
 /**********footer**************/
@@ -174,11 +188,20 @@ nav .Desktop_nav {
 /****************Tablet Views****************************/
 @media only screen and (min-width: 768px) {
   /**********Dr list sorting by**********************/
+  .Dr_list_sorting {
+    padding-bottom: 2rem;
+  }
   .Dr_list_sorting button {
-    width: 7rem;
-    height: 2.5rem;
+    /* width: 7rem;
+            height: 2.5rem; */
+  }
+  .Dr_list_sorting button i {
+    padding-left: 0.5rem;
   }
   /**************Hospital information*********************/
+  .H_information {
+    padding-top: 0rem;
+  }
   .H_information .H_list .filter {
     display: none;
   }
@@ -194,24 +217,36 @@ nav .Desktop_nav {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  .H_information .H_list .xyz_hospitals .Hospital_details .part1 .Hinfo_list ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .H_information .H_list .xyz_hospitals .Hospital_details .part1 .Hinfo_list ul li span {
     padding: 0rem 1rem;
   }
   .H_information .H_list .xyz_hospitals .Hospital_details .part1 .H_specific ul {
-    padding-bottom: 3rem;
+    /* padding-bottom: 3rem; */
   }
   .H_information .H_list .xyz_hospitals .Hospital_details .part1 .H_specific ul li span {
     padding: 0.3rem;
   }
   .H_information .H_list .xyz_hospitals .Hospital_details .part1 .book_apot {
-    width: 11rem;
     margin-left: 1rem;
     padding: 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .H_information .H_list .xyz_hospitals .Hospital_details .part1 .book_apot button {
+    width: 40%;
   }
   /******************Help***************/
-  .help .enquiry_button {
-    width: 30%;
-  }
+  /* .help {
+        .enquiry_button {
+            width: 30%;
+        }
+    } */
   /****************Footer**************************/
   .Footer {
     border-bottom: 0.5rem solid var(--dodgle-blue);
@@ -243,7 +278,7 @@ nav .Desktop_nav {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    padding: 0.5rem 0.8rem 0.5rem 0rem;
+    padding: 0.8rem 0.8rem 0rem 0rem;
   }
   .Footer .second_row {
     display: -webkit-box;
@@ -261,6 +296,7 @@ nav .Desktop_nav {
   }
   .Footer .second_row .socail-media {
     display: initial;
+    padding-top: 0.4rem;
   }
   .Footer .second_row .socail-media i {
     color: var(--dark_blue);
@@ -270,12 +306,14 @@ nav .Desktop_nav {
   .Footer .second_row .copy-rights p {
     color: var(--dark_blue);
     font-size: 0.9rem;
+    margin: 0rem;
   }
   .Footer .second_row .copy-rights p i {
     color: var(--dark_blue);
   }
 }
 
+/****************************************************/
 /*********Desktop views (1024px)*********************/
 @media only screen and (min-width: 1024px) {
   /******************Nav Bar**************************/
@@ -373,6 +411,7 @@ nav .Desktop_nav {
             flex-direction: column;
   }
   .H_information .H_list .filter form button {
+    width: 100%;
     height: 2.3rem;
     text-align: start;
     padding-left: 0.8rem;
@@ -412,7 +451,7 @@ nav .Desktop_nav {
   }
   .H_information .H_list .filter form .tratment_filter .input_lable {
     display: block;
-    padding: 0.1rem 0rem;
+    padding: 0.4rem 0rem;
     margin-left: 0.5rem;
   }
   .H_information .H_list .filter form .tratment_filter .input_lable input {
@@ -425,9 +464,35 @@ nav .Desktop_nav {
     font-size: 0.8rem;
     font-family: 'nexa-bold';
     color: var(--dark_blue);
+    padding-left: 0.8rem;
+  }
+  .H_information .H_list .xyz_hospitals {
+    width: 95.5%;
+  }
+  .H_information .H_list .xyz_hospitals .Hospital_details .part1 .Hname h2 {
+    margin-left: 2rem;
+    margin-bottom: 0rem;
+  }
+  .H_information .H_list .xyz_hospitals .Hospital_details .part1 .Hname h2::before {
+    width: 2.5rem;
+    left: -3rem;
+    top: 0.5rem;
+    border-bottom: 0.1rem solid;
+  }
+  .H_information .H_list .xyz_hospitals .Hospital_details .part1 .Hinfo_list ul {
+    margin-left: 2.5rem;
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
   }
   .H_information .H_list .xyz_hospitals .Hospital_details .part1 .H_specific ul {
-    padding: 0rem 1rem 3rem 2.5rem;
+    padding: 0rem 1rem 0rem 3rem;
+  }
+  .H_information .H_list .xyz_hospitals .Hospital_details .part1 .book_apot {
+    /* margin-left: 2rem; */
+    padding: 1rem 0rem 2rem 2rem;
+  }
+  .H_information .H_list .xyz_hospitals .Hospital_details .part1 .book_apot button {
+    width: 30%;
   }
   /************Help*****************/
   .help {
@@ -443,7 +508,7 @@ nav .Desktop_nav {
     margin-bottom: 0rem;
   }
   .help .enquiry_button {
-    width: 20%;
+    /* width: 20%; */
     padding-top: 0.5rem;
   }
   .help .enquiry_button .second_button {
@@ -451,4 +516,6 @@ nav .Desktop_nav {
     font-size: 0.9rem;
   }
 }
+
+/************************END***************************************/
 /*# sourceMappingURL=hospital.css.map */

@@ -73,11 +73,13 @@ body {
                         button {
                             height: 3rem;
                             display: flex;
-                            justify-content: space-between;
+                            justify-content: flex-end;
                             align-items: center;
-                            padding: 0rem 5% 0rem 40%;
+                          /*  padding: 0rem 5% 0rem 40%; */
+                           width: 100%;
                             i {
                                 color: var(--white);
+                                padding-left: 39%;
                             }
                         }
                     }

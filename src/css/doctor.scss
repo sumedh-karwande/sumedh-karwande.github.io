@@ -26,9 +26,12 @@ nav {
         margin: 0rem;
     }
 
-    button {
-        width: 5.8rem;
-    }
+     button {
+       /* width: 5.8rem; */
+       i {
+           color: var(--dark_blue);
+       }
+    } 
 }
 
 /********Dr informatio************************/
@@ -116,9 +119,9 @@ nav {
            color: var(--white);
         }
      }
-     .enquiry_button {
+    /* .enquiry_button {
          width: 60%;
-     }
+     } */
 }  
 
 
@@ -191,10 +194,14 @@ nav {
     /**********Dr list sorting by**********************/
     .Dr_list_sorting {
         padding-bottom: 2rem;
-        button {
-            width: 7rem;
-            height: 2.5rem;
-        }
+       button {
+           /* width: 7rem;
+            height: 2.5rem; */
+            i {
+                padding-left: 0.5rem;
+            }
+        } 
+        
     }
 
     /********Dr informatio************************/
@@ -214,6 +221,7 @@ nav {
                 form {
                     flex-direction: column;
                     button {
+                        width: 100%;
                         height: 2.3rem;
                         text-align: start;
                         padding-left: 0.8rem;
@@ -256,8 +264,8 @@ nav {
                             justify-content: space-between;
                         }
                         .input_lable {
-                            display: block;
-                            padding: 0.1rem 0rem;
+                            display: flex;
+                            padding: 0.2rem 0rem;
                             margin-left: 0.5rem;
                             input {
                                 width: 1rem;
@@ -270,6 +278,7 @@ nav {
                                 font-size: 0.8rem;
                                 font-family: 'nexa-bold';
                                 color: var(--dark_blue);
+                                padding-left: 1rem;
                             }
                         }
 
@@ -292,7 +301,7 @@ nav {
                             }
                             ::before {
                                 left: -2.5rem;
-                                width: 2.5rem;
+                                width: 2.3rem;
                             }
                         }
                         .Drinfo_list {
@@ -302,6 +311,7 @@ nav {
                                padding: 1rem 0rem 1rem 2.5rem;
                                li {
                                    padding: 0.5rem 0rem 0.5rem;
+                                   display: flex;
                                    h4 {
                                        display: flex;
                                        align-items: center;
@@ -339,11 +349,11 @@ nav {
 
 
      /******************Help***************/
-    .help {
+    /*.help {
         .enquiry_button {
             width: 30%;
         }
-    }
+    } */
 
     /****************Footer**************************/
     .Footer {
@@ -364,7 +374,7 @@ nav {
                 li {
                     color: var(--dark_blue);
                     display: inline-flex;
-                    padding: 0.5rem 0.8rem 0.5rem 0rem;
+                    padding: 0.8rem 0.8rem 0rem 0rem;
                 }
             }
         }
@@ -376,6 +386,7 @@ nav {
             padding-top: 1.5rem;
             .socail-media {
                 display: initial;
+                padding-top: 0.4rem;
                 i {
                     color: var(--dark_blue);
                     padding: 0rem;
@@ -386,6 +397,7 @@ nav {
                 p {
                     color: var(--dark_blue); 
                     font-size: 0.9rem;
+                    margin: 0rem;
                     i{
                         color: var(--dark_blue);
                     }
@@ -498,7 +510,11 @@ nav {
                             }
                             ::after {
                                 margin-left: 2rem;
+
                             }
+                        }
+                        .input_lable {
+                            padding: 0.4rem 0rem;
                         }
                     }
                 }
@@ -508,6 +524,12 @@ nav {
                 width: 95%;
                 .Dr_details {
                     .part1 {
+                        .Drname {
+                            ::before {
+                                border-bottom: 0.1rem solid;
+                                top: 0.6rem;
+                            }
+                        }
                         .Drinfo_list {
                             ul {
                                 
@@ -541,7 +563,7 @@ nav {
         }
 
         .enquiry_button {
-            width: 20%; 
+          /*  width: 20%; */
             padding-top: 0.5rem;
 
             .second_button {

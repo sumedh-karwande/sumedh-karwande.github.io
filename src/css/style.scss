@@ -46,7 +46,7 @@ $treatment_gra2:rgba(17, 10, 26,0.9);
                button {
                    margin-top: 0.5rem;
                    border: none;
-                   width: 10rem;
+                   width: 8rem;
                    height:2.25rem;
                }  
             }
@@ -241,9 +241,9 @@ $treatment_gra2:rgba(17, 10, 26,0.9);
           color: var(--white);
        }
     }
-    .enquiry_button {
+   /* .enquiry_button {
         width: 60%;
-    }
+    } */
 }
 
 /*********************Footer**********************/
@@ -419,11 +419,11 @@ $treatment_gra2:rgba(17, 10, 26,0.9);
     }
 
     /******************Help***************/
-    .help {
+   /* .help {
         .enquiry_button {
             width: 30%;
         }
-    }
+    } */
 
     /************************Footer*******************************/
     .Footer {
@@ -438,7 +438,7 @@ $treatment_gra2:rgba(17, 10, 26,0.9);
                 li {
                     color:var(--dark_blue);
                     display: inline-flex;
-                    padding: 0.5rem 0.8rem 0.5rem 0rem;
+                    padding: 0.8rem 0.8rem 0rem 0rem;
                     
                 }
             }
@@ -496,7 +496,7 @@ $treatment_gra2:rgba(17, 10, 26,0.9);
                 button {
                     width: 10rem;
                     height: 3rem;
-                    padding: 0rem 1rem;
+                  /*  padding: 0rem 1rem; */
                     border-radius: 0.3rem;
                     
                 }
@@ -713,7 +713,7 @@ $treatment_gra2:rgba(17, 10, 26,0.9);
         }
 
         .enquiry_button {
-            width: 20%;
+          /*  width: 20%; */
             padding-top: 0.5rem;
 
             .second_button {
