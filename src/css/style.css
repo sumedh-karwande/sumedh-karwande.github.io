@@ -1,3 +1,4 @@
+/*****************color variables*************************/
 /*************Nav Bar*****************************/
 nav .nav_log {
   width: 6.5rem;
@@ -410,6 +411,9 @@ nav .Desktop_nav {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-top: 1.5rem;
+  }
+  .Footer .second_row .socail-media {
+    padding-top: 0.4rem;
   }
   .Footer .second_row .socail-media i {
     color: var(--dark_blue);

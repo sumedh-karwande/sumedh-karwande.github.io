@@ -1,3 +1,4 @@
+/*****************color variables*************************/
 $treatment_gra1:rgba(0,0,0,0);
 $treatment_gra2:rgba(17, 10, 26,0.9);
 
@@ -452,6 +453,7 @@ $treatment_gra2:rgba(17, 10, 26,0.9);
              padding-top: 1.5rem;
 
             .socail-media {
+                padding-top: 0.4rem;
                 i {
                   color: var(--dark_blue);
                   padding: 0rem;

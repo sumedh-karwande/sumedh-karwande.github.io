@@ -1,0 +1,462 @@
+/*****color variables********/
+$bg_color:#8cc4e9;
+$linar_g:#0a7abb;
+/*************Nav Bar*****************************/
+nav {
+    .nav_log {
+        width: 6.5rem;
+    }
+
+    .Desktop_nav {
+        display: none;
+    }
+}
+/******************header**************/
+.header {
+    background-image: linear-gradient(to right,$linar_g, transparent), url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg);
+  /*  background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* background-position: center; */
+   background-position: top;
+    .heading {
+      
+        text-align: center;
+        h1,p {
+            color: var(--white);
+        }
+        h1 {
+            padding: 1rem;
+           /* font-size: 1.8rem; */
+        
+        }
+    }
+}
+/***************************************main************************/
+main {
+    /*****************Vacination**********************/
+    .vancination {
+        padding-bottom: 0rem;
+       h1 {
+           margin-bottom: 1.5rem;
+           
+       }
+       .vacination_info {
+           .about {
+               .artical {
+                   h2 {
+                       padding: 1rem 0rem;
+                   }
+                   p {
+                       text-align: start;
+                   }
+                   ul {
+                       padding-left: 1rem;
+                       li {
+                         color: var(--dark_blue);
+                         list-style: disc;
+                         padding: 0.3rem;
+                       }
+                       li::marker {
+                           color: var(--dodgle-blue);
+                       }
+                   }
+               }
+           }
+           .disorders {
+               padding-top: 1rem;
+               .cards {
+                   text-align: center;
+                   padding: 0.5rem 0rem;
+                   i {
+                    padding: 1.2rem;
+                    padding-right: 1.5rem;
+                    font-size: 1.3rem;
+                    border-radius: 100%;
+                    background:$bg_color;
+                    color: var(--dark_blue);
+                   }
+                   
+                   h3 {
+                       font-size: 1.09rem;
+                       padding: 0.5rem 0rem;
+                   }
+                   p {
+                       font-size: 0.85rem;
+                       line-height: 1rem;
+                
+                   }
+               }
+           }
+       }
+    }
+    /**********************Service Details***********************/
+    .service_details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .service {
+            border: 0.14rem solid var(--lightgrey);
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            width: 100%;
+            h3 {
+                position: relative;
+                margin: 1.5rem 0rem 0.5rem 1.5rem;
+                
+            }
+            h3::before {
+                content: "";
+                width: 1.25rem;
+                
+                position: absolute;
+                border-bottom: 0.14rem solid deepskyblue;
+                top: 0.4rem;
+                left: -25px;
+            }
+            ul {
+                margin: 1.5rem ;
+                margin-top: 0rem;
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 0.85rem;
+                    
+                    padding: 0.8rem 0rem;
+                    border-bottom: 0.001rem solid var(--lightgrey);
+                    color: var(--dark_blue);
+                    font-family: 'nexa-bold';
+                    span:last-child {
+                        color: var(--black_light);
+                    }
+                }
+            }
+        }
+
+    }
+}
+/******************More Services****************************/
+.MOre_Seervices {
+    background-color:$bg_color ;
+    .MS_h {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            color:  var(--white);
+            
+        }
+        .carousal-btn {
+            padding: 1rem 0rem;
+            i {
+               
+                padding: 0.5rem 0.4rem 0.5rem 0.7rem;
+                color: var(--dark_blue);
+                background-color: var(--white);
+                border-radius: 50%;
+            }
+        }
+    }
+    .service_cards {
+        .card {
+            border-radius: 0.5rem;
+            background-color: var(--white);
+            margin-bottom: 0.5rem;
+            figure {
+                img {
+                    border-top-right-radius: 0.5rem;
+                    border-top-left-radius: 0.5rem;
+                }
+            }
+            figcaption {
+               padding: 1rem 0rem;
+               h2 {
+                   margin-left: 2rem;
+                   position: relative;
+               }
+               h2::before {
+                content: "";
+                width: 1.5rem;
+                border-bottom: 0.15rem solid dodgerblue;
+                
+                position: absolute;
+                top: 0.4rem;
+                left: -2rem;
+               }
+            }
+        }
+    }
+}
+/*********************Footer**********************/
+/*********************Footer**********************/
+.Footer {
+    border-bottom: 1rem solid var(--dodgle-blue);
+    .first_row {
+        .footer_image {
+            width: 9.8rem;
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            li {
+                color: var(--white);
+                padding: 0.3rem;
+            }
+        }
+    }
+
+    .second_row {
+        .socail-media {
+            i {
+                color: var(--white);
+                padding: 0.8rem;
+            }
+        }
+
+        .copy-rights {
+            p {
+                color: var(--white);
+                i {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+/********Footer end***************/
+
+/********Footer end***************/
+
+/*************tablet views*******************/
+@media only screen and (min-width:768px) {
+    /*********************Main**************************/
+    main {
+        .vancination {
+            h1 {
+                text-align: start;
+            }
+            .vacination_info{
+                .about {
+                    display: flex;
+                    .artical {
+                        padding-left: 1.4rem;
+                        h2 {
+                            padding: 0rem;
+                        }
+                        p {
+                          margin-left: 0rem;
+                        }
+                    }
+                }
+                .disorders {
+                    display: flex;
+                    padding-top: 1.5rem;
+                    .cards {
+                        h3 {
+                            padding-top: 1.5rem;
+                        }
+                        p {
+                            margin: 0rem;
+                        }
+                    }
+                }
+            }
+        }
+        .service_details {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            .service {
+                width: 48%;
+                ul {
+                    li{
+                        span {
+                            padding: 0rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /**********************More Services***********************/
+    .MOre_Seervices {
+        .MS_h {
+            flex-direction: row;
+            justify-content: space-between;
+           /* align-items: baseline; */
+        }
+
+        .service_cards {
+            display: flex;
+            justify-content: space-between;
+            .card {
+                width: 32%;
+                h2 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    /************************Footer*******************************/
+    .Footer {
+        .first_row {
+
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            justify-content: space-between;
+
+            ul {
+                li {
+                    color:var(--dark_blue);
+                    display: inline-flex;
+                    padding: 0.8rem 0.8rem 0rem 0rem;
+                    
+                }
+            }
+        }
+
+        .second_row {
+             display: flex;
+             flex-direction: row-reverse;
+             width: 100%;
+             justify-content: space-between;
+             padding-top: 1.5rem;
+
+            .socail-media {
+                padding-top: 0.4rem;
+                i {
+                  color: var(--dark_blue);
+                  padding: 0rem;
+                  padding-left: 0.8rem;
+                }
+            }
+
+            .copy-rights {
+                p {
+                    margin: 0rem;
+                    color:var(--dark_blue);
+                    font-size: 0.9rem;
+                    i{
+                        color: var(--dark_blue);
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and ( min-width:1024px) {
+
+    /******************Nav Bar**************************/
+    nav {
+        #list_toggle {
+            display: none;
+        }
+        .nav_log {
+            width: 13rem;
+        }
+        .Desktop_nav {
+            display: initial;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            .navbar_buttons {
+                display: flex;
+
+                button {
+                    width: 10rem;
+                    height: 3rem;
+                  /*  padding: 0rem 1rem; */
+                    border-radius: 0.3rem;
+                    
+                }
+
+                .login-button {
+                    margin-right: 0.5rem;
+                    border: 0.1rem solid var(--dark_blue);
+                    background-color: var(--white);
+                    color: var(--dark_blue);
+                    font-family: 'nexa-bold';
+                }
+                
+                .quote-button {
+                    
+                    background-color: var(--dark_blue);
+                    color: var(--white);
+                }
+
+            }
+
+            ul {
+                display: flex;
+                margin-right: 4rem;
+
+                li {
+                    padding-top: 1rem;
+                    a {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    /*************************Header********************/
+    .header {
+        .heading {
+            h1 {
+                padding: 1rem 1rem 0rem 0rem;
+            }
+        }
+    } 
+    /*************************main*******************/
+    main {
+        padding: 3rem 4rem;
+        display: flex;
+        .vancination {
+            padding: 0rem;
+            margin-right: 1rem;
+            .vacination_info {
+                .artical {
+                    h2 {
+                        margin: 0rem;
+                    }
+                }
+            }
+            .disorders {
+                .cards {
+                    p {
+                        text-align: center;
+                        padding: 0rem 0.5rem;
+                    }
+                }
+            }
+        }
+
+
+        .service_details {
+            padding: 0rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            .service {
+                width: 100%;
+            }
+        }
+    }
+    /*****************More Services******************/
+    .MOre_Seervices {
+        .service_cards {
+            .card {
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+} 
+/************************END************/   

@@ -1,0 +1,481 @@
+/*****color variables********/
+/*************Nav Bar*****************************/
+nav .nav_log {
+  width: 6.5rem;
+}
+
+nav .Desktop_nav {
+  display: none;
+}
+
+/******************header**************/
+.header {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0a7abb), to(transparent)), url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg);
+  background-image: linear-gradient(to right, #0a7abb, transparent), url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg);
+  /*  background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/dentist_hero_image.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-position: top;
+}
+
+.header .heading {
+  text-align: center;
+}
+
+.header .heading h1, .header .heading p {
+  color: var(--white);
+}
+
+.header .heading h1 {
+  padding: 1rem;
+  /* font-size: 1.8rem; */
+}
+
+/***************************************main************************/
+main {
+  /*****************Vacination**********************/
+  /**********************Service Details***********************/
+}
+
+main .vancination {
+  padding-bottom: 0rem;
+}
+
+main .vancination h1 {
+  margin-bottom: 1.5rem;
+}
+
+main .vancination .vacination_info .about .artical h2 {
+  padding: 1rem 0rem;
+}
+
+main .vancination .vacination_info .about .artical p {
+  text-align: start;
+}
+
+main .vancination .vacination_info .about .artical ul {
+  padding-left: 1rem;
+}
+
+main .vancination .vacination_info .about .artical ul li {
+  color: var(--dark_blue);
+  list-style: disc;
+  padding: 0.3rem;
+}
+
+main .vancination .vacination_info .about .artical ul li::marker {
+  color: var(--dodgle-blue);
+}
+
+main .vancination .vacination_info .disorders {
+  padding-top: 1rem;
+}
+
+main .vancination .vacination_info .disorders .cards {
+  text-align: center;
+  padding: 0.5rem 0rem;
+}
+
+main .vancination .vacination_info .disorders .cards i {
+  padding: 1.2rem;
+  padding-right: 1.5rem;
+  font-size: 1.3rem;
+  border-radius: 100%;
+  background: #8cc4e9;
+  color: var(--dark_blue);
+}
+
+main .vancination .vacination_info .disorders .cards h3 {
+  font-size: 1.09rem;
+  padding: 0.5rem 0rem;
+}
+
+main .vancination .vacination_info .disorders .cards p {
+  font-size: 0.85rem;
+  line-height: 1rem;
+}
+
+main .service_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .service_details .service {
+  border: 0.14rem solid var(--lightgrey);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+main .service_details .service h3 {
+  position: relative;
+  margin: 1.5rem 0rem 0.5rem 1.5rem;
+}
+
+main .service_details .service h3::before {
+  content: "";
+  width: 1.25rem;
+  position: absolute;
+  border-bottom: 0.14rem solid deepskyblue;
+  top: 0.4rem;
+  left: -25px;
+}
+
+main .service_details .service ul {
+  margin: 1.5rem;
+  margin-top: 0rem;
+}
+
+main .service_details .service ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.85rem;
+  padding: 0.8rem 0rem;
+  border-bottom: 0.001rem solid var(--lightgrey);
+  color: var(--dark_blue);
+  font-family: 'nexa-bold';
+}
+
+main .service_details .service ul li span:last-child {
+  color: var(--black_light);
+}
+
+/******************More Services****************************/
+.MOre_Seervices {
+  background-color: #8cc4e9;
+}
+
+.MOre_Seervices .MS_h {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MOre_Seervices .MS_h h1 {
+  color: var(--white);
+}
+
+.MOre_Seervices .MS_h .carousal-btn {
+  padding: 1rem 0rem;
+}
+
+.MOre_Seervices .MS_h .carousal-btn i {
+  padding: 0.5rem 0.4rem 0.5rem 0.7rem;
+  color: var(--dark_blue);
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.MOre_Seervices .service_cards .card {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.MOre_Seervices .service_cards .card figure img {
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.MOre_Seervices .service_cards .card figcaption {
+  padding: 1rem 0rem;
+}
+
+.MOre_Seervices .service_cards .card figcaption h2 {
+  margin-left: 2rem;
+  position: relative;
+}
+
+.MOre_Seervices .service_cards .card figcaption h2::before {
+  content: "";
+  width: 1.5rem;
+  border-bottom: 0.15rem solid dodgerblue;
+  position: absolute;
+  top: 0.4rem;
+  left: -2rem;
+}
+
+/*********************Footer**********************/
+/*********************Footer**********************/
+.Footer {
+  border-bottom: 1rem solid var(--dodgle-blue);
+}
+
+.Footer .first_row .footer_image {
+  width: 9.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.Footer .first_row ul li {
+  color: var(--white);
+  padding: 0.3rem;
+}
+
+.Footer .second_row .socail-media i {
+  color: var(--white);
+  padding: 0.8rem;
+}
+
+.Footer .second_row .copy-rights p {
+  color: var(--white);
+}
+
+.Footer .second_row .copy-rights p i {
+  color: var(--white);
+}
+
+/********Footer end***************/
+/********Footer end***************/
+/*************tablet views*******************/
+@media only screen and (min-width: 768px) {
+  /*********************Main**************************/
+  main .vancination h1 {
+    text-align: start;
+  }
+  main .vancination .vacination_info .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .vancination .vacination_info .about .artical {
+    padding-left: 1.4rem;
+  }
+  main .vancination .vacination_info .about .artical h2 {
+    padding: 0rem;
+  }
+  main .vancination .vacination_info .about .artical p {
+    margin-left: 0rem;
+  }
+  main .vancination .vacination_info .disorders {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 1.5rem;
+  }
+  main .vancination .vacination_info .disorders .cards h3 {
+    padding-top: 1.5rem;
+  }
+  main .vancination .vacination_info .disorders .cards p {
+    margin: 0rem;
+  }
+  main .service_details {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  main .service_details .service {
+    width: 48%;
+  }
+  main .service_details .service ul li span {
+    padding: 0rem;
+  }
+  /**********************More Services***********************/
+  .MOre_Seervices .MS_h {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    /* align-items: baseline; */
+  }
+  .MOre_Seervices .service_cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .MOre_Seervices .service_cards .card {
+    width: 32%;
+  }
+  .MOre_Seervices .service_cards .card h2 {
+    font-size: 1.2rem;
+  }
+  /************************Footer*******************************/
+  .Footer .first_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Footer .first_row ul li {
+    color: var(--dark_blue);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.8rem 0.8rem 0rem 0rem;
+  }
+  .Footer .second_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .Footer .second_row .socail-media {
+    padding-top: 0.4rem;
+  }
+  .Footer .second_row .socail-media i {
+    color: var(--dark_blue);
+    padding: 0rem;
+    padding-left: 0.8rem;
+  }
+  .Footer .second_row .copy-rights p {
+    margin: 0rem;
+    color: var(--dark_blue);
+    font-size: 0.9rem;
+  }
+  .Footer .second_row .copy-rights p i {
+    color: var(--dark_blue);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /******************Nav Bar**************************/
+  nav #list_toggle {
+    display: none;
+  }
+  nav .nav_log {
+    width: 13rem;
+  }
+  nav .Desktop_nav {
+    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  nav .Desktop_nav .navbar_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .Desktop_nav .navbar_buttons button {
+    width: 10rem;
+    height: 3rem;
+    /*  padding: 0rem 1rem; */
+    border-radius: 0.3rem;
+  }
+  nav .Desktop_nav .navbar_buttons .login-button {
+    margin-right: 0.5rem;
+    border: 0.1rem solid var(--dark_blue);
+    background-color: var(--white);
+    color: var(--dark_blue);
+    font-family: 'nexa-bold';
+  }
+  nav .Desktop_nav .navbar_buttons .quote-button {
+    background-color: var(--dark_blue);
+    color: var(--white);
+  }
+  nav .Desktop_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4rem;
+  }
+  nav .Desktop_nav ul li {
+    padding-top: 1rem;
+  }
+  nav .Desktop_nav ul li a {
+    padding: 1rem;
+  }
+  /*************************Header********************/
+  .header .heading h1 {
+    padding: 1rem 1rem 0rem 0rem;
+  }
+  /*************************main*******************/
+  main {
+    padding: 3rem 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .vancination {
+    padding: 0rem;
+    margin-right: 1rem;
+  }
+  main .vancination .vacination_info .artical h2 {
+    margin: 0rem;
+  }
+  main .vancination .disorders .cards p {
+    text-align: center;
+    padding: 0rem 0.5rem;
+  }
+  main .service_details {
+    padding: 0rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+  }
+  main .service_details .service {
+    width: 100%;
+  }
+  /*****************More Services******************/
+  .MOre_Seervices .service_cards .card h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/************************END************/
+/*# sourceMappingURL=treatment.css.map */
