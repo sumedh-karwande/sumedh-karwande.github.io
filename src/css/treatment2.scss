@@ -37,18 +37,15 @@ main {
     /*****************Vacination**********************/
     .vancination {
         padding-bottom: 0rem;
-       h2 {
+       h1 {
            margin-bottom: 1.5rem;
            font-size: 1.5rem;
-           text-align: center;
        }
        .vacination_info {
            .about {
                .artical {
                    h2 {
                        padding: 1rem 0rem;
-                       font-size: 1.3rem;
-                       text-align: start;
                    }
                    p {
                        text-align: start;
@@ -147,7 +144,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        h2 {
+        h1 {
             color:  var(--white);
             font-size: 1.5rem;
         }
@@ -236,8 +233,9 @@ main {
     /*********************Main**************************/
     main {
         .vancination {
-            h2 {
+            h1 {
                 text-align: start;
+                font-size: 1.6rem;
             }
             .vacination_info{
                 .about {
@@ -288,6 +286,9 @@ main {
             flex-direction: row;
             justify-content: space-between;
            /* align-items: baseline; */
+           h1 {
+               font-size: 1.6rem;
+           }
         }
 
         .service_cards {
@@ -422,6 +423,9 @@ main {
         .vancination {
             padding: 0rem;
             margin-right: 1rem;
+            h1 {
+                font-size: 2.1rem;
+            }
             .vacination_info {
                 .artical {
                     h2 {
@@ -453,6 +457,11 @@ main {
     }
     /*****************More Services******************/
     .MOre_Seervices {
+        .MS_h {
+            h1 {
+                font-size: 2.1rem;
+            }
+        }
         .service_cards {
             .card {
                 h2 {
