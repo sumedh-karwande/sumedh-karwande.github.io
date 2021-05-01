@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appt</title>
+    <link href="./css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./css/theme.css" type="text/css" rel="stylesheet">
+    <link href="./css/bookapp.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous">
+</head>
+<body>
+
+     <!------------------Nav Bar----------------------->
+     <nav>
+        <div class="nav_log">
+            <img src="https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/Logo.jpg" alt="logo-tvastra">
+        </div>
+
+        
+        <i class="fas fa-bars" id="list_toggle"></i>
+
+        <div class="Desktop_nav">
+
+            <ul class="navbar_menu">
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Hospitals</a></li>
+                <li><a href="#">Treatment</a></li>
+                <li><a href="#"> Other Services</a></li>
+                <li><a href="#">About</a></li>
+             </ul>
+            
+      
+            <div class="navbar_buttons" id="navbar_button">
+                <button class="login-button">Login / Sign Up</button>
+                <button class="quote-button">Get a Quote</button>
+            </div>
+         
+            
+
+        </div>
+
+        
+    </nav>
+    <!-----------------Book appt----------------------------->
+    <section class="book_a">
+
+        <div class="main_form">
+            <h1>Book an Appointment</h1>
+            <form>
+                <div class="appt_requirement" id="date_appt" >
+                    <span for="appointment_date">Select Appointment Date*</span>
+				    <input  type="date" name="appointment_date" class="date_appt" required>
+                </div>
+
+                <div class="appt_requirement">
+                    <span>Time Interval*</span>
+                    <div class="radio_input">
+                        <input id="morning" type="radio" name="time-interval"  value="morning" required>
+						<label for="morning">Morning</label>
+                    </div>
+
+                    <div class="radio_input">
+                        <input id="afternoon" type="radio" name="time-interval"  value="afternoon">
+						<label for="afternoon">Afternoon</label>
+                    </div>
+
+                    <div class="radio_input">
+                        <input id="evening" type="radio" name="time-interval"  value="evening">
+						<label for="evening">Evening</label>
+                    </div>
+                </div>
+
+                <div class="appt_requirement">
+                    <span>Appointment Status / Urgency*</span>
+                    <div class="radio_input">
+                        <input id="routine" type="radio" name="appointment-status" class="form_container__form__appointment_status" value="routine" required>
+						<label for="routine">Routine Check-up</label>
+                    </div>
+
+                    <div class="radio_input">
+                        <input id="non_urgent" type="radio" name="appointment-status"  value="non_urgent">
+						<label for="non_urgent">Non Urgent Check-up</label>	
+                    </div>
+                    <div class="radio_input">
+                        <input id="urgent" type="radio" name="appointment-status"  value="urgent">
+						<label for="urgent">Urgent Check-up</label>	
+                    </div>
+
+                    <div class="radio_input">
+                        <input id="surgical" type="radio" name="appointment-status"  value="surgical">
+						<label for="surgical">Surgical Appointment</label>
+                    </div>
+
+                </div>
+
+                <div class="appt_requirement">
+                    <span for="health_record">Upload Previous Health Record</span>
+						<input id="file" type="file" name="health_record">
+                </div>
+
+                <div class="appt_requirement" id="texarea">
+                    <span for="appointment_details">Appointment Details</span>
+					<textarea name="appointment_details" rows="6" cols="10"></textarea>
+                </div>
+
+                <div class="book_appt-button">
+                    <button class="primary_button" type="submit">Book Appointment<i class="fas fa-arrow-right"></i></button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-------------------Footer------------------->
+    <footer>
+        <h4>All Rights Reserved. <i class="far fa-copyright"></i> tavstra 2021 </h4>
+    </footer>
+
+    
+</body>
+</html>

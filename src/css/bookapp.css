@@ -1,0 +1,234 @@
+/*******************Body************************/
+body {
+  background-color: var(--lightbg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*************Nav Bar*****************************/
+  /*********Book appt**************/
+  /**********************footer******/
+}
+
+body nav {
+  background-color: var(--white);
+}
+
+body nav .nav_log {
+  width: 6.5rem;
+}
+
+body nav .Desktop_nav {
+  display: none;
+}
+
+body .book_a .main_form {
+  background-color: var(--white);
+}
+
+body .book_a .main_form h1 {
+  color: var(--dodgle-blue);
+  border-bottom: 0.1rem solid var(--lightgrey);
+  padding: 1.5rem 0rem;
+}
+
+body .book_a .main_form form {
+  padding: 1rem;
+}
+
+body .book_a .main_form form #date_appt {
+  /*  input {
+                       width: 90%;
+                       padding: 1rem;
+                       margin: 1rem 0rem;
+                    } */
+}
+
+body .book_a .main_form form #date_appt span {
+  padding-bottom: 0.5rem;
+}
+
+body .book_a .main_form form .appt_requirement {
+  text-align: start;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+
+body .book_a .main_form form .appt_requirement .date_appt {
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem 0rem;
+}
+
+body .book_a .main_form form .appt_requirement span {
+  font-family: 'nexa-bold';
+  color: var(--dark_blue);
+  font-size: 1.2rem;
+}
+
+body .book_a .main_form form .appt_requirement .radio_input {
+  padding: 0.5rem 0rem;
+}
+
+body .book_a .main_form form .appt_requirement .radio_input input {
+  width: 1rem;
+}
+
+body .book_a .main_form form .appt_requirement #file {
+  border: none;
+  font-size: 1rem;
+}
+
+body .book_a .main_form form #texarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .book_a .main_form form #texarea span {
+  padding-bottom: 0.5rem;
+}
+
+body .book_a .main_form form .book_appt-button {
+  width: 100%;
+}
+
+body .book_a .main_form form .book_appt-button button {
+  width: 100%;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .book_a .main_form form .book_appt-button button i {
+  color: var(--white);
+  padding-left: 39%;
+}
+
+body footer {
+  background-color: var(--lightbg-color);
+}
+
+body footer h4 i {
+  color: var(--dark_blue);
+}
+
+@media only screen and (min-width: 768px) {
+  /*********book appt*******************************/
+  body .book_a {
+    padding-top: 5.8rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .book_a .main_form {
+    width: 80%;
+  }
+  body .book_a .main_form span {
+    padding: 0rem;
+  }
+  body .book_a .main_form form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .book_a .main_form form .appt_requirement .date_appt {
+    width: 93%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    /******************Nav Bar**************************/
+    /************Main****book_a"*********************/
+  }
+  body nav #list_toggle {
+    display: none;
+  }
+  body nav .nav_log {
+    width: 13rem;
+  }
+  body nav .Desktop_nav {
+    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  body nav .Desktop_nav .navbar_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body nav .Desktop_nav .navbar_buttons button {
+    width: 10rem;
+    height: 3rem;
+    padding: 0rem 1rem;
+    border-radius: 0.3rem;
+  }
+  body nav .Desktop_nav .navbar_buttons .login-button {
+    margin-right: 0.5rem;
+    border: 0.1rem solid var(--dark_blue);
+    background-color: var(--white);
+    color: var(--dark_blue);
+    font-family: 'nexa-bold';
+  }
+  body nav .Desktop_nav .navbar_buttons .quote-button {
+    background-color: var(--dark_blue);
+    color: var(--white);
+  }
+  body nav .Desktop_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4rem;
+  }
+  body nav .Desktop_nav ul li {
+    padding-top: 1rem;
+  }
+  body nav .Desktop_nav ul li a {
+    padding: 1rem;
+  }
+  body .book_a .main_form {
+    width: 60%;
+  }
+  body .book_a .main_form h1 {
+    text-align: center;
+  }
+  body .book_a .main_form form .appt_requirement .date_appt {
+    width: 91%;
+  }
+  body .book_a .main_form form .appt_requirement textarea {
+    width: 94%;
+  }
+  body .book_a .main_form form .book_appt-button button {
+    width: 95%;
+  }
+}
+
+/******************The End************************************/
+/*# sourceMappingURL=bookapp.css.map */

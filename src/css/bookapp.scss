@@ -1,0 +1,214 @@
+/*******************Body************************/
+body {
+    background-color: var(--lightbg-color);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /*************Nav Bar*****************************/
+    nav {
+        background-color: var(--white);
+        .nav_log {
+            width: 6.5rem;
+        }
+    
+        .Desktop_nav {
+            display: none;
+        }
+    }
+    /*********Book appt**************/
+    .book_a {
+        
+        .main_form{
+            background-color: var(--white);
+            h1 {
+                color: var(--dodgle-blue);
+                border-bottom: 0.1rem solid var(--lightgrey);
+                padding: 1.5rem 0rem;
+            }
+            form {
+               padding: 1rem; 
+               #date_appt {
+                   span {
+                       padding-bottom: 0.5rem;
+                   }
+                 /*  input {
+                       width: 90%;
+                       padding: 1rem;
+                       margin: 1rem 0rem;
+                    } */
+               }
+               .appt_requirement {
+                   text-align: start;
+                   width: 100%;
+                   padding-bottom: 1rem;
+                   .date_appt {
+                        width: 90%;
+                        padding: 1rem;
+                        margin: 1rem 0rem;
+                    }
+                   span {
+                       font-family: 'nexa-bold';
+                       color: var(--dark_blue);
+                       font-size: 1.2rem;
+                   }
+                   .radio_input {
+                       padding: 0.5rem 0rem;
+                       input {
+                           width: 1rem;
+                        }
+                    }
+                    #file {
+                        border: none;
+                        font-size: 1rem;
+                    }
+                }
+                #texarea {
+                    display: flex;
+                    flex-direction: column;
+                    span {
+                        padding-bottom: 0.5rem;
+                    }
+                }
+                .book_appt-button {
+                    width: 100%;
+                    button {
+                        width: 100%;
+                        height: 3rem;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+
+                        i{
+                            color: var(--white);
+                            padding-left: 39%;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+
+     /**********************footer******/
+     footer {
+        background-color: var(--lightbg-color);
+        h4 {
+            i {
+                 color: var(--dark_blue);
+            }
+        }
+        
+    }
+}
+@media only screen and ( min-width:768px) {
+    /*********book appt*******************************/
+    body {
+        .book_a{
+            padding-top: 5.8rem;
+            display: flex;
+            justify-content: center;
+            .main_form{
+                width: 80%;
+                
+                
+                span {
+                    padding: 0rem;
+                }
+                
+                form {
+                     flex-direction: column;
+                     .appt_requirement {
+                         .date_appt {
+                             width: 93%;
+                         }
+                     } 
+                }
+            }
+        }
+    }
+}
+@media only screen and ( min-width:1024px) {
+    body{
+        /******************Nav Bar**************************/
+        nav {
+            #list_toggle {
+                display: none;
+            }
+            .nav_log {
+                width: 13rem;
+            }
+            .Desktop_nav {
+                display: initial;
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+    
+                .navbar_buttons {
+                    display: flex;
+    
+                    button {
+                        width: 10rem;
+                        height: 3rem;
+                        padding: 0rem 1rem;
+                        border-radius: 0.3rem;
+                        
+                    }
+    
+                    .login-button {
+                        margin-right: 0.5rem;
+                        border: 0.1rem solid var(--dark_blue);
+                        background-color: var(--white);
+                        color: var(--dark_blue);
+                        font-family: 'nexa-bold';
+                    }
+                    
+                    .quote-button {
+                        
+                        background-color: var(--dark_blue);
+                        color: var(--white);
+                    }
+    
+                }
+    
+                ul {
+                    display: flex;
+                    margin-right: 4rem;
+    
+                    li {
+                        padding-top: 1rem;
+                        a {
+                            padding: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        /************Main****book_a"*********************/
+        .book_a {
+            .main_form {
+                width: 60%;
+                h1 {
+                    text-align: center;
+                }
+                form {
+                    .appt_requirement {
+                        .date_appt {
+                            width: 91%;
+                        }
+                        textarea {
+                            width: 94%;
+                        }
+                    }
+                    .book_appt-button {
+                        button {
+                            width: 95%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/******************The End************************************/
