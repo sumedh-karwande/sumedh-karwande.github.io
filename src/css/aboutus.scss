@@ -1,0 +1,219 @@
+/**********Navbar**************************/
+nav {
+    .nav_log {
+        width: 6.5rem;
+    }
+
+    .Desktop_nav {
+        display: none;
+    }
+}
+/**********Help**********************/
+.help {
+    background-color: var(--lightbg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    .help_hp {
+        h1{
+           color: var(--white);
+        }
+    }
+    
+}
+/******************header**************/
+.header {
+    background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    height: 17rem;
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1,p {
+            color: var(--white);
+        }
+        h1 {
+            padding: 1rem;
+            font-size: 1.8rem;
+        
+        }
+    }
+}
+
+
+/*********************Footer**********************/
+.Footer {
+    .first_row {
+        .footer_image {
+            width: 9.8rem;
+            padding-bottom: 0.5rem;
+        }
+        ul {
+            li {
+                color: var(--white);
+                padding: 0.3rem;
+            }
+        }
+    }
+
+    .second_row {
+        .socail-media {
+            i {
+                color: var(--white);
+                padding: 0.8rem;
+            }
+        }
+
+        .copy-rights {
+            p {
+                color: var(--white);
+                i {
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+/********Footer end***************/
+
+/************Meadia Q*******************************/
+/*************Tablet Views (768px)*********************/
+
+/************************Find Afforable********************/
+@media only screen and ( min-width:768px) {
+
+    /************************Footer*******************************/
+    .Footer {
+        .first_row {
+
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+            justify-content: space-between;
+
+            ul {
+                li {
+                    color:var(--dark_blue);
+                    display: inline-flex;
+                    padding: 0.8rem 0.8rem 0rem 0rem;
+                    
+                }
+            }
+        }
+
+        .second_row {
+             display: flex;
+             flex-direction: row-reverse;
+             width: 100%;
+             justify-content: space-between;
+             padding-top: 1.5rem;
+
+            .socail-media {
+                padding-top: 0.4rem;
+                i {
+                  color: var(--dark_blue);
+                  padding: 0rem;
+                  padding-left: 0.8rem;
+                }
+            }
+
+            .copy-rights {
+                p {
+                    margin: 0rem;
+                    color:var(--dark_blue);
+                    font-size: 0.9rem;
+                    i{
+                        color: var(--dark_blue);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*********Desktop views (1024px)*********************/
+@media only screen and ( min-width:1024px) {
+
+    /******************Nav Bar**************************/
+    nav {
+        #list_toggle {
+            display: none;
+        }
+        .nav_log {
+            width: 13rem;
+        }
+        .Desktop_nav {
+            display: initial;
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            .navbar_buttons {
+                display: flex;
+
+                button {
+                    width: 10rem;
+                    height: 3rem;
+                  /*  padding: 0rem 1rem; */
+                    border-radius: 0.3rem;
+                    
+                }
+
+                .login-button {
+                    margin-right: 0.5rem;
+                    border: 0.1rem solid var(--dark_blue);
+                    background-color: var(--white);
+                    color: var(--dark_blue);
+                    font-family: 'nexa-bold';
+                }
+                
+                .quote-button {
+                    
+                    background-color: var(--dark_blue);
+                    color: var(--white);
+                }
+
+            }
+
+            ul {
+                display: flex;
+                margin-right: 4rem;
+
+                li {
+                    padding-top: 1rem;
+                    a {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    /************Help*****************/
+    .help {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .help_hp {
+            p {
+                margin-bottom: 0rem;
+            }
+        }
+
+        .enquiry_button {
+          /*  width: 20%; */
+            padding-top: 0.5rem;
+
+            .second_button {
+                height: 3.2rem;
+                font-size: 0.9rem;
+            }
+        }
+    }    
+}

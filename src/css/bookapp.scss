@@ -1,6 +1,6 @@
 /*******************Body************************/
 body {
-    background-color: var(--lightbg-color);
+  
     
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@ body {
 
     /*************Nav Bar*****************************/
     nav {
-        background-color: var(--white);
+        
         .nav_log {
             width: 6.5rem;
         }
@@ -19,7 +19,7 @@ body {
     }
     /*********Book appt**************/
     .book_a {
-        
+        background-color: var(--lightbg-color);
         .main_form{
             background-color: var(--white);
             h1 {
@@ -67,6 +67,7 @@ body {
                 #texarea {
                     display: flex;
                     flex-direction: column;
+                    
                     span {
                         padding-bottom: 0.5rem;
                     }
@@ -77,12 +78,13 @@ body {
                         width: 100%;
                         height: 3rem;
                         display: flex;
-                        justify-content: flex-end;
+                        justify-content: center;
                         align-items: center;
+                        letter-spacing: 0.5rem;
 
                         i{
                             color: var(--white);
-                            padding-left: 39%;
+                            padding-left: 10%;
                         }
                     }
                 } 
@@ -117,12 +119,20 @@ body {
                 }
                 
                 form {
-                     flex-direction: column;
-                     .appt_requirement {
-                         .date_appt {
-                             width: 93%;
-                         }
-                     } 
+                    flex-direction: column;
+                    .appt_requirement {
+                        .date_appt {
+                            width: 93%;
+                        }
+                    }
+                    .book_appt-button {
+                        button {
+                            justify-content: flex-end;
+                            i {
+                                padding-left: 15%;
+                            }
+                        }
+                    } 
                 }
             }
         }
@@ -203,12 +213,17 @@ body {
                     .book_appt-button {
                         button {
                             width: 95%;
+                            i{
+                                padding-left: 30%;
+                            }
                         }
                     }
                 }
             }
         }
     }
+  
+    
 }
 
 /******************The End************************************/

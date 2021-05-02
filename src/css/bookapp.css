@@ -1,6 +1,5 @@
 /*******************Body************************/
 body {
-  background-color: var(--lightbg-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,16 +15,16 @@ body {
   /**********************footer******/
 }
 
-body nav {
-  background-color: var(--white);
-}
-
 body nav .nav_log {
   width: 6.5rem;
 }
 
 body nav .Desktop_nav {
   display: none;
+}
+
+body .book_a {
+  background-color: var(--lightbg-color);
 }
 
 body .book_a .main_form {
@@ -109,17 +108,18 @@ body .book_a .main_form form .book_appt-button button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  letter-spacing: 0.5rem;
 }
 
 body .book_a .main_form form .book_appt-button button i {
   color: var(--white);
-  padding-left: 39%;
+  padding-left: 10%;
 }
 
 body footer {
@@ -155,6 +155,14 @@ body footer h4 i {
   }
   body .book_a .main_form form .appt_requirement .date_appt {
     width: 93%;
+  }
+  body .book_a .main_form form .book_appt-button button {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  body .book_a .main_form form .book_appt-button button i {
+    padding-left: 15%;
   }
 }
 
@@ -227,6 +235,9 @@ body footer h4 i {
   }
   body .book_a .main_form form .book_appt-button button {
     width: 95%;
+  }
+  body .book_a .main_form form .book_appt-button button i {
+    padding-left: 30%;
   }
 }
 
