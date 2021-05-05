@@ -397,7 +397,8 @@ nav .Desktop_nav {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    height: 32rem;
+    height: 22rem;
+    /* height: 32rem; */
   }
   .r_score .video_info {
     display: -ms-grid;
@@ -407,7 +408,8 @@ nav .Desktop_nav {
     grid-column-gap: 1.5rem;
     padding-top: 0rem;
     position: absolute;
-    margin: 4rem;
+    margin: 0rem 4rem;
+    /* margin: 4rem; */
   }
   .r_score .video_info .r_artical h2 {
     margin-top: 0rem;

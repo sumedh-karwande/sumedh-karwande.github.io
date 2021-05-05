@@ -362,7 +362,8 @@ nav {
                 display: block;
                 width: 100%;
                 object-fit: cover;
-                height: 32rem;
+                height: 22rem;
+               /* height: 32rem; */
             }
         }
 
@@ -373,7 +374,8 @@ nav {
         grid-column-gap: 1.5rem;
         padding-top: 0rem;
         position: absolute;
-        margin: 4rem;
+        margin: 0rem 4rem;
+       /* margin: 4rem; */
 
         
             .r_artical {
