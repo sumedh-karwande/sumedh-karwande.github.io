@@ -195,7 +195,7 @@ body footer h4 i {
     padding: 1rem;
   }
   body .main form {
-    width: 40%;
+    /* width: 40%; */
     display: inline-block;
   }
   body .main form .login .input .Enter_input select {
