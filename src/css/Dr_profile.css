@@ -198,6 +198,9 @@ nav .Desktop_nav {
     margin-left: 0rem;
     text-align: start;
   }
+  .Dr_main .Dr_artical .Dr_about ul li h2 {
+    font-size: 1.1rem;
+  }
   .Dr_main .Dr_artical .Dr_about ul p {
     margin-left: 0rem;
   }
