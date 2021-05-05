@@ -1,0 +1,217 @@
+/*******************Body************************/
+body {
+  background-color: var(--lightbg-color);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*************Nav Bar*****************************/
+  /*****************main login*********************************************/
+}
+
+body nav {
+  background-color: var(--white);
+}
+
+body nav .nav_log {
+  width: 6.5rem;
+}
+
+body nav .Desktop_nav {
+  display: none;
+}
+
+body .main {
+  background-color: var(--lightbg-color);
+  text-align: center;
+}
+
+body .main form {
+  display: contents;
+}
+
+body .main form .login {
+  background-color: var(--white);
+}
+
+body .main form .login h2 {
+  color: var(--dodgle-blue);
+  padding: 1.5rem;
+  border-bottom: 0.1rem solid var(--lightgrey);
+}
+
+body .main form .login .input {
+  padding: 1rem;
+}
+
+body .main form .login .input .Enter_input {
+  border: 0.1rem solid var(--lightgrey);
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main form .login .input .Enter_input input {
+  border: none;
+  padding: 1rem;
+}
+
+body .main form .login .input .Enter_input textarea {
+  width: 100%;
+  border: none;
+  margin-left: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+body .main form .login .input .Enter_input i {
+  padding: 0.75rem;
+}
+
+body .main form .login .input .Enter_input select {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: var(--black_light);
+}
+
+body .main form .login .input .city_state {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-column-gap: 0.1rem;
+}
+
+body .main form .login .input .city_state .Enter_input {
+  width: 97%;
+}
+
+body .main form .login .input .login-button button {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.4rem;
+  /*  padding: 0rem 5% 0rem 40%; */
+  width: 100%;
+}
+
+body .main form .login .input .login-button button i {
+  color: var(--white);
+  padding-left: 29%;
+}
+
+body .main form .login .input h4 {
+  padding-top: 1rem;
+}
+
+body .main form .login .input h4 a {
+  color: var(--dodgle-blue);
+  padding-left: 0.2rem;
+}
+
+body footer {
+  background-color: var(--lightbg-color);
+}
+
+body footer h4 i {
+  color: var(--dark_blue);
+}
+
+/**********************Tablet Views*******************************/
+@media only screen and (min-width: 768px) {
+  body .main form {
+    width: 60%;
+    display: inline-block;
+    padding: 5rem 0rem;
+  }
+  body .main form .login .input .login-button button i {
+    padding-left: 35%;
+  }
+}
+
+/*********Desktop views (1024px)*********************/
+@media only screen and (min-width: 1024px) {
+  body {
+    /******************Nav Bar**************************/
+    /**************main****************************/
+  }
+  body nav #list_toggle {
+    display: none;
+  }
+  body nav .nav_log {
+    width: 13rem;
+  }
+  body nav .Desktop_nav {
+    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  body nav .Desktop_nav .navbar_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body nav .Desktop_nav .navbar_buttons button {
+    width: 10rem;
+    height: 3rem;
+    padding: 0rem 1rem;
+    border-radius: 0.3rem;
+  }
+  body nav .Desktop_nav .navbar_buttons .login-button {
+    margin-right: 0.5rem;
+    border: 0.1rem solid var(--dark_blue);
+    background-color: var(--white);
+    color: var(--dark_blue);
+    font-family: 'nexa-bold';
+  }
+  body nav .Desktop_nav .navbar_buttons .quote-button {
+    background-color: var(--dark_blue);
+    color: var(--white);
+  }
+  body nav .Desktop_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4rem;
+  }
+  body nav .Desktop_nav ul li {
+    padding-top: 1rem;
+  }
+  body nav .Desktop_nav ul li a {
+    padding: 1rem;
+  }
+  body .main form {
+    width: 40%;
+    display: inline-block;
+  }
+  body .main form .login .input .Enter_input select {
+    font-size: 1rem;
+  }
+}
+
+/*************************End**********************/
+/*# sourceMappingURL=S_query.css.map */

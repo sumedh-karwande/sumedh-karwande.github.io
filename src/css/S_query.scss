@@ -1,0 +1,220 @@
+/*******************Body************************/
+body {
+    background-color: var(--lightbg-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /*************Nav Bar*****************************/
+    nav {
+        background-color: var(--white);
+        .nav_log {
+            width: 6.5rem;
+        }
+        .Desktop_nav {
+            display: none;
+        }
+    }
+    
+    /*****************main login*********************************************/
+    .main {
+        background-color: var(--lightbg-color);
+        text-align: center;
+        
+        form {
+           
+           display: contents;
+            .login {
+                background-color: var(--white);
+                
+                h2 {
+                    color: var(--dodgle-blue);
+                    padding: 1.5rem;
+                    border-bottom: 0.1rem solid var(--lightgrey);
+                }
+                .input {
+                    padding: 1rem;
+                    .Enter_input {
+                        border: 0.1rem solid var(--lightgrey);
+                        margin-bottom: 0.5rem;
+                        display: flex;
+                        align-items: center;
+                        
+                        input {
+                            border: none;
+                            padding: 1rem;
+                            
+                        }
+                        textarea {
+                            width: 100%;
+                            border: none;
+                            margin-left: 0.8rem;
+                            margin-top: 0.4rem;
+                        }
+                         
+                        i {
+                            padding: 0.75rem;
+                        }
+                        select {
+                            width: 100%;
+                            border: none;
+                            padding: 1rem;
+                            font-size: 0.8rem;
+                            color: var(--black_light);
+                           
+                        }
+                       
+                    }
+                   
+                    .city_state {
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        grid-column-gap: 0.1rem;
+
+                        .Enter_input {
+                             width: 97%;
+                        }
+                    } 
+                    .login-button {
+                        button {
+                            height: 3rem;
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: center;
+                            letter-spacing: 0.4rem;
+                          /*  padding: 0rem 5% 0rem 40%; */
+                           width: 100%;
+                            i {
+                                color: var(--white);
+                                padding-left: 29%;
+                            }
+                        }
+                    }
+                    h4 {
+                        padding-top: 1rem;
+                        a {
+                            color: var(--dodgle-blue);
+                            padding-left: 0.2rem;
+                        }
+                    }
+                }
+            }    
+        }
+        
+    }
+    footer {
+        background-color: var(--lightbg-color);
+        h4 {
+            i {
+                 color: var(--dark_blue);
+            }
+        }
+        
+    }
+}
+
+
+/**********************Tablet Views*******************************/
+ 
+@media only screen and ( min-width:768px) {
+    body {
+        .main {
+            form {
+                width: 60%;
+                display: inline-block;
+                padding: 5rem 0rem;
+                .login {
+                    .input {
+                        .login-button {
+                            button {
+                                i{
+                                    padding-left: 35%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}
+  /*********Desktop views (1024px)*********************/
+@media only screen and ( min-width:1024px) {
+    body {
+        /******************Nav Bar**************************/
+        nav {
+            #list_toggle {
+                display: none;
+            }
+            .nav_log {
+                width: 13rem;
+            }
+            .Desktop_nav {
+                display: initial;
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+    
+                .navbar_buttons {
+                    display: flex;
+    
+                    button {
+                        width: 10rem;
+                        height: 3rem;
+                        padding: 0rem 1rem;
+                        border-radius: 0.3rem;
+                        
+                    }
+    
+                    .login-button {
+                        margin-right: 0.5rem;
+                        border: 0.1rem solid var(--dark_blue);
+                        background-color: var(--white);
+                        color: var(--dark_blue);
+                        font-family: 'nexa-bold';
+                    }
+                    
+                    .quote-button {
+                        
+                        background-color: var(--dark_blue);
+                        color: var(--white);
+                    }
+    
+                }
+    
+                ul {
+                    display: flex;
+                    margin-right: 4rem;
+    
+                    li {
+                        padding-top: 1rem;
+                        a {
+                            padding: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        /**************main****************************/
+        .main {
+            form {
+                width: 40%;
+                display: inline-block;
+                .login {
+                    .input {
+                        .Enter_input {
+                            select {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+} 
+/*************************End**********************/   
