@@ -9,30 +9,17 @@ nav .Desktop_nav {
 
 /******************header**************/
 .header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg);
-  /* background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg");*/
+  background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-position: top;
-  height: 17rem;
 }
 
 .header .heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /*   display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
 }
 
 .header .heading h1, .header .heading p {
@@ -40,47 +27,47 @@ nav .Desktop_nav {
 }
 
 .header .heading h1 {
-  padding: 1rem;
+  padding: 1rem 0rem;
   /*  font-size: 1.8rem; */
 }
 
-/*****************************main_hp**************/
-.main_hp .info_hp .artical {
-  text-align: center;
+/**********************Dr_main*********/
+.Dr_main .Dr_artical {
+  border: 0.1rem solid var(--lightgrey);
+  padding: 0.5rem;
+  /***************Dr About***********/
 }
 
-.main_hp .info_hp .artical h2 {
-  padding-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-.main_hp .info_hp .artical .signature {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.Dr_main .Dr_artical .Dr_img img {
   padding-bottom: 0.5rem;
 }
 
-.main_hp .info_hp .artical .signature img {
-  width: 15rem;
+.Dr_main .Dr_artical .Dr_img button {
+  width: 100%;
 }
 
-/*************************************Score***********************/
-.r_score {
-  background-color: var(--black);
+.Dr_main .Dr_artical .Dr_about .Dr_name {
+  /* border-bottom: 0.1rem solid var(--lightgrey);
+                border-bottom-style: dashed; */
 }
 
-.r_score .video #myvideo {
-  display: none;
+.Dr_main .Dr_artical .Dr_about .Dr_name h1 {
+  text-align: start;
+  color: var(--dodgle-blue);
+  position: relative;
+  margin: 1.5rem;
 }
 
-.r_score .video_info .r_artical {
+.Dr_main .Dr_artical .Dr_about .Dr_name h1::before {
+  content: "";
+  position: absolute;
+  border-bottom: 0.19rem solid;
+  width: 1.5rem;
+  top: 0.5rem;
+  left: -2rem;
+}
+
+.Dr_main .Dr_artical .Dr_about .Dr_name ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,57 +75,59 @@ nav .Desktop_nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.r_score .video_info .r_artical h2 {
-  color: var(--white);
-  text-align: center;
-  padding-bottom: 0.5rem;
-  font-size: 1.5rem;
+.Dr_main .Dr_artical .Dr_about .Dr_name ul li {
+  display: initial;
+  border: none;
+  font-size: 0.8rem;
+  color: var(--dark_blue);
+  padding: 0.8rem 0rem;
 }
 
-.r_score .video_info .r_artical p {
-  color: var(--grey_c);
-  padding: 1rem 0rem;
+.Dr_main .Dr_artical .Dr_about .Dr_name ul li i {
+  padding-right: 0.5rem;
 }
 
-.r_score .video_info .r_numbers .r_type {
-  margin: 0.8rem 0rem;
-  padding: 2rem 1rem;
+.Dr_main .Dr_artical .Dr_about .Dr_name p {
+  text-align: start;
+}
+
+.Dr_main .Dr_artical .Dr_about ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 0.1rem solid var(--grey_c);
-  border-radius: 0.3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+  /* border-bottom: 0.1rem solid var(--lightgrey);
+                    border-bottom-style: dashed; */
 }
 
-.r_score .video_info .r_numbers .r_type span {
-  color: var(--white);
-  font-family: 'nexa-bold';
-  font-size: 1.5rem;
-}
-
-.r_score .video_info .r_numbers .r_type p {
-  color: var(--grey_c);
-  padding-top: 0.5rem;
+.Dr_main .Dr_artical .Dr_about ul li h2 {
+  color: var(--dodgle-blue);
   margin: 0rem;
-  font-size: 0.7rem;
+}
+
+.Dr_main .Dr_artical .Dr_about ul li h2 i {
+  /*  color: var(--dodgle-blue); */
+  padding-right: 0.8rem;
+}
+
+.Dr_main .Dr_artical .Dr_about ul li i {
+  color: var(--dodgle-blue);
+}
+
+.Dr_main .Dr_artical .Dr_about ul li #up_down_angle {
+  background-color: #e5f1f7;
+  padding: 0.1rem 0.01rem 0.01rem 0.3rem;
+  border-radius: 50%;
+}
+
+.Dr_main .Dr_artical .Dr_about ul p {
+  background-color: #e5f1f7;
+  text-align: start;
 }
 
 /**********Help**********************/
@@ -202,62 +191,63 @@ nav .Desktop_nav {
 /*************Tablet Views (768px)*********************/
 /************************Find Afforable********************/
 @media only screen and (min-width: 768px) {
-  /*******************main_hp*********************/
-  .main_hp .info_hp {
+  /***************Dr_main****************/
+  .Dr_main .Dr_artical {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
-  .main_hp .info_hp .artical {
-    text-align: left;
+  .Dr_main .Dr_artical .Dr_img {
+    width: 50rem;
+    height: 100%;
+    padding: 1rem;
   }
-  .main_hp .info_hp .artical p {
-    text-align: left;
-    margin: 1rem 0rem;
+  .Dr_main .Dr_artical .Dr_about {
+    padding: 0rem 1rem 1rem 1rem;
   }
-  .main_hp .info_hp .artical .signature {
+  .Dr_main .Dr_artical .Dr_about .Dr_name h1 {
+    margin-left: 0rem;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+  .Dr_main .Dr_artical .Dr_about .Dr_name h1::before {
+    width: 1.4rem;
+    left: -1.5rem;
+    top: 0.7rem;
+  }
+  .Dr_main .Dr_artical .Dr_about .Dr_name p {
+    margin-left: 0rem;
+    text-align: start;
+  }
+  .Dr_main .Dr_artical .Dr_about .Dr_name ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Dr_main .Dr_artical .Dr_about .Dr_name ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-left: 1rem;
   }
-  .main_hp .info_hp .Dr_img {
-    width: 100%;
-    height: 100%;
-    padding-top: 1rem;
+  .Dr_main .Dr_artical .Dr_about ul li h2 {
+    font-size: 1.1rem;
   }
-  /******************Help***********/
-  .help .help_hp h2 {
-    padding-bottom: 0rem;
-  }
-  /**************************R main****************/
-  .r_score .video_info .r_artical {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .r_score .video_info .r_artical p {
-    margin: 1rem 0rem;
-    text-align: start;
-  }
-  .r_score .video_info .r_numbers {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-top: 2rem;
-  }
-  .r_score .video_info .r_numbers .r_type {
-    width: 27.19%;
-    padding: 1.5rem 1rem;
-    margin: 0.5rem 0.5rem 0rem 0rem;
-  }
-  .r_score .video_info .r_numbers .r_type span {
-    padding: 0rem;
-  }
-  .r_score .video_info .r_numbers .r_type p {
-    padding: 0rem;
+  .Dr_main .Dr_artical .Dr_about ul p {
+    margin-left: 0rem;
   }
   /************************Footer*******************************/
   .Footer .first_row {
@@ -365,62 +355,19 @@ nav .Desktop_nav {
   nav .Desktop_nav ul li a {
     padding: 1rem;
   }
-  /******************main_hp********/
-  .main_hp .info_hp {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
+  /*************Dr_main*****************/
+  .Dr_main .Dr_artical {
+    padding: 1rem;
   }
-  .main_hp .info_hp .artical h2 {
-    font-size: 1.7rem;
+  .Dr_main .Dr_artical .Dr_about .Dr_name h1 {
+    font-size: 2.1rem;
   }
-  .main_hp .info_hp .Dr_img {
-    width: 50%;
-    height: 90%;
-    padding-left: 20%;
+  .Dr_main .Dr_artical .Dr_about .Dr_name h1::before {
+    width: 2rem;
+    left: -2rem;
   }
-  /************************r_score***************/
-  .r_score {
-    position: relative;
-    padding: 0rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .r_score .video {
-    width: 100%;
-  }
-  .r_score .video #myvideo {
-    display: block;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 32rem;
-  }
-  .r_score .video_info {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-    grid-column-gap: 1.5rem;
-    padding-top: 0rem;
-    position: absolute;
-    margin: 4rem;
-  }
-  .r_score .video_info .r_artical h2 {
-    margin-top: 0rem;
-    font-size: 1.7rem;
-  }
-  .r_score .video_info .r_artical p {
-    margin-top: 0rem;
-    padding-top: 0rem;
-    margin-bottom: 3rem;
-  }
-  .r_score .video_info .r_numbers .r_type {
-    width: 26%;
-    height: 5rem;
+  .Dr_main .Dr_artical .Dr_about ul li {
+    padding: 1.5rem 0rem;
   }
   /************Help*****************/
   .help {
@@ -450,5 +397,5 @@ nav .Desktop_nav {
   }
 }
 
-/**************************End*************************/
-/*# sourceMappingURL=aboutus.css.map */
+/***************************END*******************/
+/*# sourceMappingURL=About_H.css.map */

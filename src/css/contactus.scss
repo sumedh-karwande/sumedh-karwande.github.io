@@ -15,16 +15,16 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     .heading {
-        display: flex;
+     /*   display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         h1,p {
             color: var(--white);
         }
         h1 {
-            padding: 1rem;
-            font-size: 1.8rem;
+            padding: 1rem 0rem;
+          /*  font-size: 1.8rem; */
         
         }
     }

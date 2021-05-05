@@ -8,103 +8,113 @@ nav {
         display: none;
     }
 }
-
 /******************header**************/
 .header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg);
-   /* background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/aboutUs_hero.jpeg");*/
+    background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-position: top;
-    height: 17rem;
     .heading {
-        display: flex;
+     /*   display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         h1,p {
             color: var(--white);
         }
         h1 {
-            padding: 1rem;
+            padding: 1rem 0rem;
           /*  font-size: 1.8rem; */
         
         }
     }
 }
-/*****************************main_hp**************/
-.main_hp {
-    .info_hp {
-        .artical {
-            text-align: center;
-            h2 {
-                padding-bottom: 1rem;
-                font-size: 1.5rem;
-            }
-            .signature {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+/**********************Dr_main*********/
+.Dr_main {
+    .Dr_artical {
+        border: 0.1rem solid var(--lightgrey);
+        padding: 0.5rem;
+        .Dr_img{
+            img {
                 padding-bottom: 0.5rem;
-                img {
-                    width: 15rem;
+            }
+            button {
+                width: 100%;
+            }
+        }
+        /***************Dr About***********/
+        .Dr_about {
+            .Dr_name {
+               /* border-bottom: 0.1rem solid var(--lightgrey);
+                border-bottom-style: dashed; */
+                h1 {
+                    text-align: start;
+                    color: var(--dodgle-blue);
+                    position: relative;
+                    margin:1.5rem                                          
+                   
                 }
-            }
-        }
-    }
-}
-/*************************************Score***********************/
-.r_score {
-    background-color: var(--black);
-    .video {
-        #myvideo {
-            display: none;
-        }
-    }
-    .video_info{
-        .r_artical {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            h2 {
-                color: var(--white);
-                text-align: center;
-                padding-bottom: 0.5rem;
-                font-size: 1.5rem;
-            }
-            p {
-                color: var(--grey_c);
-                padding: 1rem 0rem;
-            }
-        }
-        .r_numbers {
-            .r_type {
-                margin: 0.8rem 0rem;
-                padding: 2rem 1rem;
-                display: flex;
-               flex-direction: column;
-               justify-content: center;
-               align-items: center;
-               border: 0.1rem solid var(--grey_c);
-               border-radius: 0.3rem;
-                span {
-                    color: var(--white);
-                    font-family: 'nexa-bold';
-                    font-size: 1.5rem;
+                h1::before {
+                    content: "";
+                    position: absolute;
+                    border-bottom: 0.19rem solid;
+                    width: 1.5rem;
+                    top: 0.5rem;
+                    left: -2rem;
                 }
-                p{
-                    color: var(--grey_c);  
-                    padding-top: 0.5rem;
-                    margin: 0rem;
-                    font-size: 0.7rem;
-                }
-            }
-        }
-    }
-}
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        display: initial;
+                        border: none;
+                        font-size: 0.8rem;
+                        color: var(--dark_blue);
+                        padding: 0.8rem 0rem;
+                        i {
+                            padding-right: 0.5rem;
+                        }
+                    }
 
+                }
+                p {
+                    text-align: start;
+                }
+            }
+            ul {
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 1rem 0;
+                   /* border-bottom: 0.1rem solid var(--lightgrey);
+                    border-bottom-style: dashed; */
+                    h2 {
+                        color: var(--dodgle-blue);
+                        margin: 0rem;
+                        i {
+                          /*  color: var(--dodgle-blue); */
+                            padding-right: 0.8rem;
+                        }
+                    }
+                    i {
+                        color: var(--dodgle-blue); 
+                    }
+                    #up_down_angle {
+                        
+                        background-color: #e5f1f7;
+                        padding: 0.1rem 0.01rem 0.01rem 0.3rem;
+                        border-radius: 50%;
+
+                    }
+                }
+                p {
+                    background-color: #e5f1f7;
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
 /**********Help**********************/
 .help {
     background-color: var(--lightbg-color);
@@ -123,7 +133,6 @@ nav {
     }
     
 }
-
 /*********************Footer**********************/
 .Footer {
     border-bottom: 0.5rem solid var(--dodgle-blue);
@@ -165,65 +174,56 @@ nav {
 
 /************************Find Afforable********************/
 @media only screen and ( min-width:768px) {
-    /*******************main_hp*********************/
-    .main_hp {
-        .info_hp {
+    /***************Dr_main****************/
+    .Dr_main {
+        .Dr_artical {
             display: flex;
-            .artical {
-                text-align: left;
-                p {
-                    text-align: left;
-                    margin: 1rem 0rem;
-                }
-                .signature {
-                    justify-content: flex-start;
-                    padding-left: 1rem;
-                }
-            }
+            flex-direction: row-reverse;
             .Dr_img {
-                width: 100%;
+                width: 50rem;
                 height: 100%;
-                padding-top: 1rem;
+                padding: 1rem;
             }
-        }
-    }
-    /******************Help***********/
-    .help {
-        .help_hp {
-            h2 {
-                padding-bottom: 0rem;
-            }
-        }
-    }
-    /**************************R main****************/
-    .r_score {
-        .video_info{
-    
-            .r_artical {
-                align-items: flex-start;
-                p {
-                    margin: 1rem 0rem;
-                    text-align: start;
+            .Dr_about {
+                padding: 0rem 1rem 1rem 1rem;
+                .Dr_name {
+                    h1 {
+                        margin-left: 0rem;
+                        margin-top: 1rem;
+                        font-size: 1.6rem;
+                    }
+                    h1::before{
+                        width: 1.4rem;
+                        left:-1.5rem;
+                        top: 0.7rem;
+                    }
+                    p{
+                        margin-left: 0rem;
+                        text-align: start;
+                    }
+                    ul {
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        align-items: center;
+                        li {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                        }
+                    }
+
                 }
-            }
-            .r_numbers {
-                display: flex;
-                flex-wrap: wrap;
-                padding-top: 2rem;
-                .r_type {
-                    width: 27.19%;
-                    
-                    padding: 1.5rem 1rem;
-                    margin: 0.5rem 0.5rem 0rem 0rem;
-                    span {
-                        padding: 0rem;
+                ul {
+                    li {
+                        h2 {
+                            font-size: 1.1rem;
+                        }
                     }
                     p {
-                        padding: 0rem;
+                        margin-left: 0rem;
                     }
                 }
             }
-
         }
     }
     /************************Footer*******************************/
@@ -333,69 +333,27 @@ nav {
             }
         }
     }
-    /******************main_hp********/
-    .main_hp {
-        .info_hp {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            .artical {
-                h2 {
-                    font-size: 1.7rem;
+    /*************Dr_main*****************/
+    .Dr_main {
+       .Dr_artical {
+           padding: 1rem;
+           .Dr_about {
+               .Dr_name {
+                   h1 {
+                       font-size: 2.1rem;
+                    }
+                    h1::before {
+                        width: 2rem;
+                        left: -2rem;
+                    }
                 }
-            }
-            .Dr_img {
-                width: 50%;
-                height: 90%;
-                padding-left: 20%;
-            }
-        }
-    }
-    /************************r_score***************/
-    .r_score {
-        position: relative;
-        padding: 0rem;
-        width: 100%;
-        display: flex;
-        .video {
-            width: 100%;
-            #myvideo {
-                display: block;
-                width: 100%;
-                object-fit: cover;
-                height: 32rem;
-            }
-        }
-
-
-        .video_info{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-column-gap: 1.5rem;
-        padding-top: 0rem;
-        position: absolute;
-        margin: 4rem;
-
-        
-            .r_artical {
-                h2 {
-                   margin-top: 0rem;
-                   font-size: 1.7rem;
+                ul {
+                    li {
+                        padding: 1.5rem 0rem;
+                    }
                 }
-                p{
-                    margin-top: 0rem;
-                    padding-top: 0rem;
-                    margin-bottom: 3rem;
-                }
-            }
-            .r_numbers {
-                .r_type {
-                    width: 26%;
-                    height: 5rem;
-    
-                }
-            }
-
-        }
+           }
+       } 
     }
     /************Help*****************/
     .help {
@@ -421,6 +379,7 @@ nav {
                 font-size: 0.9rem;
             }
         }
-    }    
-}
-/**************************End*************************/
+    }
+} 
+
+/***************************END*******************/

@@ -1,0 +1,353 @@
+/**********Navbar**************************/
+nav .nav_log {
+  width: 6.5rem;
+}
+
+nav .Desktop_nav {
+  display: none;
+}
+
+/******************header**************/
+.header {
+  background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/tasks/contactUs.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header .heading {
+  /*   display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+}
+
+.header .heading h1, .header .heading p {
+  color: var(--white);
+}
+
+.header .heading h1 {
+  padding: 1rem 0rem;
+  /*  font-size: 1.8rem; */
+}
+
+/**********************Dr_main*********/
+.Dr_main .Dr_artical {
+  border: 0.1rem solid var(--lightgrey);
+  padding: 0.5rem;
+  /***************Dr About***********/
+}
+
+.Dr_main .Dr_artical .Dr_img img {
+  padding-bottom: 0.5rem;
+}
+
+.Dr_main .Dr_artical .Dr_img button {
+  width: 100%;
+}
+
+.Dr_main .Dr_artical .Dr_about .Dr_name {
+  border-bottom: 0.1rem solid var(--lightgrey);
+  border-bottom-style: dashed;
+}
+
+.Dr_main .Dr_artical .Dr_about .Dr_name h1 {
+  text-align: start;
+  color: var(--dodgle-blue);
+  position: relative;
+  margin: 2rem;
+  margin-left: 2.8rem;
+}
+
+.Dr_main .Dr_artical .Dr_about .Dr_name h1::before {
+  content: "";
+  position: absolute;
+  border-bottom: 0.19rem solid;
+  width: 3rem;
+  top: 0.8rem;
+  left: -3.3rem;
+}
+
+.Dr_main .Dr_artical .Dr_about ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 0.1rem solid var(--lightgrey);
+  border-bottom-style: dashed;
+}
+
+.Dr_main .Dr_artical .Dr_about ul li h2 {
+  color: var(--dodgle-blue);
+  margin: 0rem;
+}
+
+.Dr_main .Dr_artical .Dr_about ul li h2 i {
+  /*  color: var(--dodgle-blue); */
+  padding-right: 0.8rem;
+}
+
+.Dr_main .Dr_artical .Dr_about ul li i {
+  color: var(--dodgle-blue);
+}
+
+.Dr_main .Dr_artical .Dr_about ul li #up_down_angle {
+  background-color: #e5f1f7;
+  padding: 0.1rem 0.01rem 0.01rem 0.3rem;
+  border-radius: 50%;
+}
+
+.Dr_main .Dr_artical .Dr_about ul p {
+  background-color: #e5f1f7;
+  text-align: start;
+}
+
+/**********Help**********************/
+.help {
+  background-color: var(--lightbg-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.help .help_hp {
+  text-align: center;
+}
+
+.help .help_hp h1 {
+  color: var(--white);
+  /*  font-size: 1.5rem; */
+  padding-bottom: 0.8rem;
+}
+
+/*********************Footer**********************/
+.Footer {
+  border-bottom: 0.5rem solid var(--dodgle-blue);
+}
+
+.Footer .first_row .footer_image {
+  width: 9.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.Footer .first_row ul li {
+  color: var(--white);
+  padding: 0.3rem;
+}
+
+.Footer .second_row .socail-media i {
+  color: var(--white);
+  padding: 0.8rem;
+}
+
+.Footer .second_row .copy-rights p {
+  color: var(--white);
+}
+
+.Footer .second_row .copy-rights p i {
+  color: var(--white);
+}
+
+/********Footer end***************/
+/************Meadia Q*******************************/
+/*************Tablet Views (768px)*********************/
+/************************Find Afforable********************/
+@media only screen and (min-width: 768px) {
+  /***************Dr_main****************/
+  .Dr_main .Dr_artical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .Dr_main .Dr_artical .Dr_img {
+    width: 50rem;
+    height: 100%;
+    padding: 1rem;
+  }
+  .Dr_main .Dr_artical .Dr_about {
+    padding: 0rem 1rem 1rem 1rem;
+  }
+  .Dr_main .Dr_artical .Dr_about .Dr_name h1 {
+    margin-left: 0rem;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+  .Dr_main .Dr_artical .Dr_about .Dr_name h1::before {
+    width: 1.4rem;
+    left: -1.5rem;
+    top: 0.5rem;
+  }
+  .Dr_main .Dr_artical .Dr_about .Dr_name p {
+    margin-left: 0rem;
+    text-align: start;
+  }
+  .Dr_main .Dr_artical .Dr_about ul p {
+    margin-left: 0rem;
+  }
+  /************************Footer*******************************/
+  .Footer .first_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Footer .first_row ul li {
+    color: var(--dark_blue);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.8rem 0.8rem 0rem 0rem;
+  }
+  .Footer .second_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .Footer .second_row .socail-media {
+    padding-top: 0.4rem;
+  }
+  .Footer .second_row .socail-media i {
+    color: var(--dark_blue);
+    padding: 0rem;
+    padding-left: 0.8rem;
+  }
+  .Footer .second_row .copy-rights p {
+    margin: 0rem;
+    color: var(--dark_blue);
+    font-size: 0.9rem;
+  }
+  .Footer .second_row .copy-rights p i {
+    color: var(--dark_blue);
+  }
+}
+
+/*********Desktop views (1024px)*********************/
+@media only screen and (min-width: 1024px) {
+  /******************Nav Bar**************************/
+  nav #list_toggle {
+    display: none;
+  }
+  nav .nav_log {
+    width: 13rem;
+  }
+  nav .Desktop_nav {
+    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  nav .Desktop_nav .navbar_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .Desktop_nav .navbar_buttons button {
+    width: 10rem;
+    height: 3rem;
+    /*  padding: 0rem 1rem; */
+    border-radius: 0.3rem;
+  }
+  nav .Desktop_nav .navbar_buttons .login-button {
+    margin-right: 0.5rem;
+    border: 0.1rem solid var(--dark_blue);
+    background-color: var(--white);
+    color: var(--dark_blue);
+    font-family: 'nexa-bold';
+  }
+  nav .Desktop_nav .navbar_buttons .quote-button {
+    background-color: var(--dark_blue);
+    color: var(--white);
+  }
+  nav .Desktop_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4rem;
+  }
+  nav .Desktop_nav ul li {
+    padding-top: 1rem;
+  }
+  nav .Desktop_nav ul li a {
+    padding: 1rem;
+  }
+  /*************Dr_main*****************/
+  .Dr_main .Dr_artical {
+    padding: 1rem;
+  }
+  .Dr_main .Dr_artical .Dr_about .Dr_name h1 {
+    font-size: 2.1rem;
+  }
+  .Dr_main .Dr_artical .Dr_about .Dr_name h1::before {
+    width: 2rem;
+    left: -2rem;
+  }
+  .Dr_main .Dr_artical .Dr_about ul li {
+    padding: 1.5rem 0rem;
+  }
+  /************Help*****************/
+  .help {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .help .help_hp {
+    /*  h2 {
+                text-align: start;
+            } */
+  }
+  .help .help_hp p {
+    margin-bottom: 0rem;
+  }
+  .help .enquiry_button {
+    /*  width: 20%; */
+    padding-top: 0.5rem;
+  }
+  .help .enquiry_button .second_button {
+    height: 3.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/***************************END*******************/
+/*# sourceMappingURL=Dr_profile.css.map */
