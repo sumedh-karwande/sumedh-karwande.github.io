@@ -1,0 +1,984 @@
+/**********Navbar**************************/
+nav .nav_log {
+  width: 6.5rem;
+}
+
+nav .Desktop_nav {
+  display: none;
+}
+
+/***************Hero***********************/
+.hero {
+  background-image: url("https://s3.ap-south-1.amazonaws.com/appdev.konfinity.com/css/task30-tvastra-plus/tvastraPlus_heroSection.webp");
+  background-repeat: repeat;
+  background-size: cover;
+  height: 19rem;
+}
+
+.hero .hero_hp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero_hp h1 {
+  margin: 1rem 0rem;
+}
+
+.hero .hero_hp span {
+  background-color: #0a7abb;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.3rem;
+  color: var(--white);
+  font-family: 'nexa-light';
+  font-size: 0.85rem;
+}
+
+/******************************Plan***************/
+.plan {
+  text-align: center;
+  padding: 1rem 1.4rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8cc4e9), to(transparent));
+  background: linear-gradient(#8cc4e9, transparent);
+}
+
+.plan .tvastra_plan {
+  /*  background-color: red; */
+  padding: 1.5rem 1rem;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: -1px -1px 10px 2px #e0d6d6;
+          box-shadow: -1px -1px 10px 2px #e0d6d6;
+  background-color: var(--white);
+  margin-top: -10rem;
+}
+
+.plan .tvastra_plan .plan_hp {
+  border-bottom: 0.1rem solid var(--lightgrey);
+}
+
+.plan .tvastra_plan .plan_hp h1 {
+  font-size: 1.5rem;
+}
+
+.plan .tvastra_plan .plan_card_group {
+  /*   display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+}
+
+.plan .tvastra_plan .plan_card_group .plan_card {
+  padding: 0rem 2rem;
+}
+
+.plan .tvastra_plan .plan_card_group .plan_card h2 {
+  font-size: 1.3rem;
+}
+
+.plan .tvastra_plan .plan_card_group .plan_card .first_h {
+  padding: 1.5rem;
+  border-bottom: 0.1rem solid var(--lightgrey);
+}
+
+.plan .tvastra_plan .plan_card_group .plan_card .offers {
+  padding-top: 1rem;
+  /* height: 11rem; */
+  min-height: 11rem;
+}
+
+.plan .tvastra_plan .plan_card_group .plan_card .price {
+  /* #popular {
+                       
+                        position: absolute;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: -4.4rem;
+                        margin-top: 2rem;
+                        
+                        p{
+                        color: var(--white);
+                        background-color: green;
+                        border-radius: 1rem;
+                        padding: 0.2rem 0.5rem;
+                        width: 3.5rem;
+                        }
+                    
+                    } */
+}
+
+.plan .tvastra_plan .plan_card_group .plan_card .price h2 i {
+  color: var(--dark_blue);
+}
+
+.plan .tvastra_plan .plan_card_group .plan_card .price h2 span {
+  font-size: 0.9rem;
+}
+
+.plan .tvastra_plan .plan_card_group .plan_card .price p {
+  color: #0a7abb;
+  font-family: 'nexa-bold';
+  font-size: 0.8rem;
+  padding: 0.5rem;
+}
+
+.plan .tvastra_plan .plan_card_group #popular_card {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8cc4e9), to(transparent));
+  background: linear-gradient(#8cc4e9, transparent);
+  margin-top: 2.8rem;
+  padding-bottom: 2rem;
+}
+
+.plan .tvastra_plan .plan_card_group #popular_card #popular {
+  position: absolute;
+  margin-top: -0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.plan .tvastra_plan .plan_card_group #popular_card #popular p {
+  color: var(--white);
+  background-color: green;
+  margin-left: -9rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 1rem;
+}
+
+/************************Rating*************/
+.rating .rating_hp h1 {
+  font-size: 1.5rem;
+}
+
+.rating .rating_hp p {
+  padding: 1rem 0rem;
+}
+
+.rating .xyz_rating {
+  text-align: center;
+  color: #0a7abb;
+}
+
+.rating .xyz_rating p {
+  color: #0a7abb;
+}
+
+.rating .xyz_rating .rating_number .rating-score span {
+  font-size: 2.5rem;
+  font-family: 'nexa-bold';
+}
+
+.rating .xyz_rating .rating_number .rating-score .rating_star {
+  padding: 0.5rem;
+}
+
+.rating .xyz_rating .rating_number .rating-score .rating_star i {
+  color: #0a7abb;
+  font-size: 0.79rem;
+  padding: 0.1rem;
+}
+
+.rating .xyz_rating .rating_number .rating-graph {
+  padding: 1rem 0rem;
+}
+
+.rating .xyz_rating .rating_number .rating-graph ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rating .xyz_rating .rating_number .rating-graph ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* margin: 1rem 0rem; */
+}
+
+.rating .xyz_rating .rating_number .rating-graph ul li p {
+  font-family: 'nexa-bold';
+  margin-right: 0.8rem;
+}
+
+.rating .xyz_rating .rating_number .rating-graph ul li .rating-bar {
+  width: 13rem;
+  height: 0.9rem;
+  background-color: var(--lightgrey);
+  border-radius: 1rem;
+}
+
+.rating .xyz_rating .rating_number .rating-graph ul li .rating-bar div {
+  background-color: #0a7abb;
+  border-radius: 1rem;
+  height: 100%;
+}
+
+.rating .xyz_rating .rating_number .rating-graph ul li .bar-5 {
+  width: 70%;
+}
+
+.rating .xyz_rating .rating_number .rating-graph ul li .bar-4 {
+  width: 30%;
+}
+
+.rating .xyz_rating .rating_number .rating-graph ul li .bar-3 {
+  width: 30%;
+}
+
+.rating .xyz_rating .rating_number .rating-graph ul li .bar-2 {
+  width: 20%;
+}
+
+.rating .xyz_rating .rating_number .rating-graph ul li .bar-1 {
+  width: 10%;
+}
+
+.rating .xyz_rating .rating-extra-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.rating .xyz_rating .rating-extra-info .extra_num i, .rating .xyz_rating .rating-extra-info .extra_num h3 {
+  color: #0a7abb;
+}
+
+.rating .xyz_rating .rating-extra-info .extra_num i {
+  font-size: 2rem;
+}
+
+.rating .xyz_rating .rating-extra-info .extra_num h3 {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.rating .xyz_rating .rating-extra-info .extra_num h3, .rating .xyz_rating .rating-extra-info .extra_num p {
+  padding-left: 0.8rem;
+}
+
+/***********************Benefits*****************************/
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /**********container**********************/
+}
+
+.benefits .membership {
+  /* text-align: center; */
+  font-size: 1.1rem;
+  /*  border-bottom: 0.5rem solid green; */
+  padding-bottom: 1rem;
+  font-family: 'nexa-light';
+  position: relative;
+}
+
+.benefits .membership::before {
+  content: "";
+  width: 19rem;
+  height: 0.3rem;
+  background-color: #d1ecfd;
+  /* background: $bg_ligr; */
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 2rem;
+  left: -2rem;
+}
+
+.benefits .container .zero_f h1 {
+  font-size: 1.5rem;
+  padding: 1.5rem 0rem;
+}
+
+.benefits .container .zero_f ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.benefits .container .zero_f ul li p {
+  text-align: initial;
+  padding-left: 0.5rem;
+}
+
+.benefits .container .zero_f ul li i {
+  color: #8cc4e9;
+}
+
+.benefits .container #top-hospital {
+  border-radius: 0rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.benefits .container #top-hospital h3 {
+  font-size: 1.2rem;
+}
+
+.benefits .container #top-hospital .hospitals {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  margin: 1rem 0rem;
+}
+
+.benefits .container #top-hospital .hospitals .hos-logo {
+  /* background-color: red; */
+  padding: 10px;
+  border-bottom: 1px solid #8cc4e9;
+}
+
+.benefits .container #top-hospital .hospitals .hos-logo:nth-last-child(2):nth-child(odd) {
+  border-bottom: none;
+}
+
+.benefits .container #top-hospital .hospitals .hos-logo:last-child {
+  border-bottom: none;
+}
+
+.benefits .container #top-hospital .hospitals .hos-logo:nth-child(odd) {
+  border-right: 1px solid #8cc4e9;
+}
+
+.benefits .container #top-hospital .hospitals .hos-logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 85%;
+}
+
+.benefits .container .benfi_img {
+  -webkit-box-shadow: 1px 1px 3px 1px #856666;
+          box-shadow: 1px 1px 3px 1px #856666;
+  border-radius: 1rem;
+  margin: 0rem 1rem;
+}
+
+.benefits .container .benfi_img img {
+  border-radius: 1rem;
+  margin-bottom: -0.2rem;
+}
+
+/***************************Test********************************/
+.tests #includes {
+  font-family: 'nexa-bold';
+}
+
+.tests .profile_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tests .profile_card .profile_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: -1px -1px 10px 2px #e0d6d6;
+          box-shadow: -1px -1px 10px 2px #e0d6d6;
+  width: 48.1%;
+  margin: 0.2rem;
+  padding: 1.5rem 0rem;
+}
+
+.tests .profile_card .profile_img span {
+  font-size: 1.1rem;
+  font-family: 'nexa-bold';
+  padding: 1rem;
+  text-align: center;
+}
+
+.tests .profile_card .profile_img p {
+  margin: 0rem;
+}
+
+.tests .profile_card .profile_img img {
+  width: 4rem;
+  height: auto;
+}
+
+.tests .dotss {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.tests .dotss .dott {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin-right: 0.5rem;
+  /* background-color: red; */
+  background-color: var(--lightgrey);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.tests .dotss #active_dot {
+  background-color: #0a7abb;
+}
+
+/********************************why********************/
+.why .why_love h1 {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.why .why_love h1 span {
+  background-color: #0a7abb;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.3rem;
+  color: var(--white);
+  font-family: 'nexa-light';
+  font-size: 0.85rem;
+}
+
+.why .why_box .why_articale {
+  -webkit-box-shadow: -1px -1px 10px 2px #e0d6d6;
+          box-shadow: -1px -1px 10px 2px #e0d6d6;
+  padding: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.why .why_box .why_articale .why_user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1rem;
+}
+
+.why .why_box .why_articale .why_user .user_img {
+  width: 21%;
+  margin-right: 1rem;
+}
+
+.why .why_box .why_articale .why_user .user_img img {
+  border-radius: 50%;
+}
+
+.why .why_box .why_articale .why_user .plan_name span {
+  font-size: 1.1rem;
+  font-family: 'nexa-bold';
+  color: var(--dark_blue);
+}
+
+.why .why_box .why_articale .why_user .plan_name h4 {
+  /* background-color: red; */
+  background-color: #d1ecfd;
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  color: #0a7abb;
+}
+
+/****************Question ans***********************************/
+.q_ans h1 {
+  font-size: 1.5rem;
+}
+
+.q_ans .question ul li {
+  color: #0a7abb;
+  font-family: 'nexa-bold';
+  padding: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.q_ans .question ul li i {
+  color: #0a7abb;
+  /*  padding: 0.1rem 0.01rem 0.01rem 0.3rem; */
+  border-radius: 50%;
+  background-color: #d1ecfd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-left: 0.2rem;
+}
+
+.q_ans .question ul p {
+  text-align: start;
+  background-color: #d1ecfd;
+  margin-bottom: 0rem;
+}
+
+/*********************Footer**********************/
+.Footer {
+  border-bottom: 0.5rem solid var(--dodgle-blue);
+}
+
+.Footer .first_row .footer_image {
+  width: 9.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.Footer .first_row ul li {
+  color: var(--white);
+  padding: 0.3rem;
+}
+
+.Footer .second_row .socail-media i {
+  color: var(--white);
+  padding: 0.8rem;
+}
+
+.Footer .second_row .copy-rights p {
+  color: var(--white);
+}
+
+.Footer .second_row .copy-rights p i {
+  color: var(--white);
+}
+
+/********Footer end***************/
+/************Meadia Q*******************************/
+/*************Tablet Views (768px)*********************/
+/************************Find Afforable********************/
+@media only screen and (min-width: 768px) {
+  /***********hero"***************/
+  .hero .hero_hp {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 0.8rem;
+  }
+  .hero .hero_hp p {
+    margin: 0rem;
+  }
+  /*****************main**********************/
+  .plan {
+    padding: 2rem;
+  }
+  .plan .tvastra_plan {
+    margin-top: -12.5rem;
+  }
+  .plan .tvastra_plan .plan_hp {
+    padding: 0.8rem;
+  }
+  .plan .tvastra_plan .plan_hp h1 {
+    text-align: center;
+  }
+  .plan .tvastra_plan .plan_hp p {
+    text-align: center;
+  }
+  .plan .tvastra_plan .plan_card_group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .plan .tvastra_plan .plan_card_group .plan_card {
+    padding: 0rem 1rem;
+  }
+  .plan .tvastra_plan .plan_card_group .plan_card .first_h {
+    padding-top: 2rem;
+  }
+  .plan .tvastra_plan .plan_card_group .plan_card .offers {
+    height: 21.5rem;
+  }
+  .plan .tvastra_plan .plan_card_group .plan_card #compr_offers {
+    height: 20rem;
+  }
+  .plan .tvastra_plan .plan_card_group #popular_card {
+    margin-top: 0rem;
+    border-left: 1px solid #a7d2ee;
+    border-right: 1px solid #a7d2ee;
+  }
+  .plan .tvastra_plan .plan_card_group #popular_card .offers {
+    height: 20.3rem;
+  }
+  .plan .tvastra_plan .plan_card_group #popular_card #popular {
+    position: initial;
+    margin-top: -2rem;
+  }
+  .plan .tvastra_plan .plan_card_group #popular_card #popular p {
+    margin-left: 0rem;
+  }
+  .plan .tvastra_plan .plan_card_group #popular_card .first_h {
+    padding-top: 0rem;
+  }
+  /**************************Rating***********************/
+  .rating .xyz_rating .rating_number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1.2rem 0rem;
+  }
+  .rating .xyz_rating .rating_number .rating-score {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rating .xyz_rating .rating_number .rating-graph ul li {
+    padding: 0.5rem;
+  }
+  .rating .xyz_rating .rating_number .rating-graph ul li p {
+    margin: 0rem;
+    margin-right: 0.8rem;
+  }
+  .rating .xyz_rating .rating-extra-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .rating .xyz_rating .rating-extra-info .extra_num {
+    width: 100%;
+  }
+  .rating .xyz_rating .rating-extra-info .extra_num h3 {
+    padding-top: 1rem;
+  }
+  .rating .xyz_rating .rating-extra-info .extra_num p {
+    margin: 0rem;
+  }
+  /*************************benefits***********************************/
+  .benefits .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    padding: 1.5rem 0rem;
+  }
+  .benefits .container .zero_f h1 {
+    text-align: initial;
+  }
+  .benefits .container .zero_f ul li {
+    padding-bottom: 1rem;
+  }
+  .benefits .container .zero_f ul li p {
+    margin: 0rem;
+  }
+  .benefits .container .benfi_img {
+    margin: 1.4rem 0rem;
+  }
+  .benefits .container #top-hospital h3 {
+    margin-top: 1.8rem;
+  }
+  .benefits #con_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .benefits #con_left .benfi_img {
+    width: 100%;
+  }
+  /************************Tests**********************/
+  .tests #includes {
+    text-align: initial;
+    margin: 0rem;
+    padding-bottom: 1.5rem;
+  }
+  .tests .dotss span {
+    padding: 0rem;
+  }
+  /***********************why*************************/
+  .why .why_love {
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    padding-bottom: 1.8rem;
+  }
+  .why .why_love h1 {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .why .why_love h1 span {
+    margin-left: 0.8rem;
+  }
+  .why .why_box {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+  .why .why_box .why_articale h3 {
+    font-size: 0.9rem;
+  }
+  .why .why_box .why_articale .why_user .plan_name span {
+    padding: 0rem;
+  }
+  /***************************Question and ans**************/
+  .q_ans h1 {
+    text-align: start;
+  }
+  .q_ans .question ul p {
+    margin: 0rem;
+  }
+  /************************Footer*******************************/
+  .Footer .first_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Footer .first_row ul li {
+    color: var(--dark_blue);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0.8rem 0.8rem 0rem 0rem;
+  }
+  .Footer .second_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+  .Footer .second_row .socail-media {
+    padding-top: 0.4rem;
+  }
+  .Footer .second_row .socail-media i {
+    color: var(--dark_blue);
+    padding: 0rem;
+    padding-left: 0.8rem;
+  }
+  .Footer .second_row .copy-rights p {
+    margin: 0rem;
+    color: var(--dark_blue);
+    font-size: 0.9rem;
+  }
+  .Footer .second_row .copy-rights p i {
+    color: var(--dark_blue);
+  }
+}
+
+/*********Desktop views (1024px)*********************/
+@media only screen and (min-width: 1024px) {
+  /******************Nav Bar**************************/
+  nav #list_toggle {
+    display: none;
+  }
+  nav .nav_log {
+    width: 13rem;
+  }
+  nav .Desktop_nav {
+    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 100%;
+  }
+  nav .Desktop_nav .navbar_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .Desktop_nav .navbar_buttons button {
+    width: 10rem;
+    height: 3rem;
+    /*  padding: 0rem 1rem; */
+    border-radius: 0.3rem;
+  }
+  nav .Desktop_nav .navbar_buttons .login-button {
+    margin-right: 0.5rem;
+    border: 0.1rem solid var(--dark_blue);
+    background-color: var(--white);
+    color: var(--dark_blue);
+    font-family: 'nexa-bold';
+  }
+  nav .Desktop_nav .navbar_buttons .quote-button {
+    background-color: var(--dark_blue);
+    color: var(--white);
+  }
+  nav .Desktop_nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 4rem;
+  }
+  nav .Desktop_nav ul li {
+    padding-top: 1rem;
+  }
+  nav .Desktop_nav ul li a {
+    padding: 1rem;
+  }
+  /******************************hero************************/
+  .hero .hero_hp h1 {
+    font-size: 2.1rem;
+  }
+  /***********plan****************/
+  .plan {
+    padding: 0rem 3.8rem;
+  }
+  .plan .tvastra_plan .plan_card_group .plan_card {
+    /* margin-top: 1rem;*/
+  }
+  .plan .tvastra_plan .plan_card_group .plan_card .offers p {
+    text-align: center;
+  }
+  .plan .tvastra_plan .plan_card_group .plan_card .price p {
+    text-align: center;
+  }
+  .plan .tvastra_plan .plan_card_group #popular_card {
+    padding: 0rem 1.5rem;
+  }
+  .plan .tvastra_plan .plan_card_group #popular_card #popular {
+    margin-top: -1rem;
+  }
+  /**********Rating************/
+  .rating .rating_hp h1 {
+    text-align: center;
+  }
+  .rating .rating_hp p {
+    text-align: center;
+    padding: 1rem 5rem;
+  }
+  .rating .xyz_rating .rating_number .rating-score {
+    padding-right: 3rem;
+  }
+  .rating .xyz_rating .rating-extra-info .extra_num p {
+    text-align: center;
+  }
+  /******************tests"***************/
+  .tests .profile_card {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .tests .profile_card .profile_img {
+    margin-right: 0.5rem;
+  }
+  /************************why****************/
+  .why .why_box {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  /*************Benefits******************/
+  .benefits .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .benefits .container #top-hospital h3 {
+    margin-top: 0rem;
+  }
+  .benefits .container .benfi_img {
+    /* width: 60%; */
+    width: auto;
+  }
+  .benefits #con_left {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .benefits #con_left .benfi_img {
+    /* width: 40%; */
+    width: auto;
+  }
+}
+
+/******************************END*********************/
+/*# sourceMappingURL=tvastra_+.css.map */
