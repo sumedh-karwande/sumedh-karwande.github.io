@@ -95,10 +95,11 @@ nav .Desktop_nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.Dr_information .Dr_list .experts_details .Dr_details .part1 .book_apot button {
-  width: 60%;
+  /* a {
+                               button {
+                               width: 60%;
+                           }
+                        }  */
 }
 
 .Dr_information .Dr_list .experts_details .Dr_details .Drimage1 {
